@@ -1,0 +1,11 @@
+{
+  "name": "m3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch" : "node-sass -o css scss/index.scss -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
