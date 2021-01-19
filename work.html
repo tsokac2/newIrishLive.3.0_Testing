@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Irish Life | Travel | Work | Experience | Life Style</title>
+    <meta name="description" content="Web-based travel guide for providing correct information how easily start living and working in Ireland">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merienda:wght@400;700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/c8a0926547.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_hI6S08d1aK1XKKU2VWtOI");
+        })();
+    </script>
+</head>
+<body>
+<div class="blur"></div>
+<nav class="container-fluid d-none d-md-block">
+    <div class="row justify-content-center">
+        <div class="col col-lg-10">
+            <div class="row justify-content-center text-center">
+                <div class="col text-center left">
+                    <div class="row justify-content-center">
+                        <a class="text-decoration-none  left-wrap border-right" href="index.html">HOME</a>
+                        <a class="text-decoration-none  left-wrap border-right" href="trip.html">TRIP</a>
+                        <a class="text-decoration-none  left-wrap border-right" href="work.html">WORK</a>
+                        <a class="text-decoration-none  left-wrap " href="life.html">LIFE</a>
+                    </div>
+                </div>
+                <div class="col-3 mt-4">
+                    <a  href="index.html"><img src="assets/images/Logo.png" width="100" alt="New Irish Logo"></a>
+                </div>
+                <div class="col right">
+                   <div class="row justify-content-between">
+                       <div class="col-7 text-left search-wrap">
+                           <form onsubmit="return false;">
+                                <span><i class="fas fa-search"></i></span>
+                                <input type="search" id="search" placeholder="Search option in development" disabled>
+                           </form>
+                       </div>
+                       <div class="col-4 text-right side-icons-wrap">
+                            <a href="#" class="sing" data-toggle="modal" data-target="#sing-in" ><i class="fas fa-user-plus"></i></a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav> 
+<div class="container-fluid d-md-none border-bottom">
+    <div class="row justify-content-center mobile-nav-wrap">
+        <div class="col-10 col-sm-6">
+            <div class="row">
+                <div class="col-12 mobile-nav-search p-0 pt-2">
+                    <form onsubmit="return false;">
+                        <input type="search" id="searchMobile" placeholder="Search option in development" disabled>
+                        <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="row justify-content-center">
+                <div class="col-6 text-left mt-4">
+                    <a  href="index.html">
+                        <img class="img-fluid" src="assets/images/Logo.png" width="60" alt="New Irish Logo">
+                    </a>
+                </div>
+                <div class="col-6 text-right mt-4">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light nav-padding d-md-none">
+    <div class="collapse navbar-collapse mt-4" id="navbarSupportedContent">
+        <div class="nav-mobile">
+            <div class="wrap">
+                <a href="index.html" class="link">
+                    <i class="fas fa-home icon"></i>
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="wrap">
+                <a href="trip.html" class="link" >
+                    <i class="fas fa-plane-departure"></i>
+                    <span>Trip</span>
+                </a>
+            </div>
+            <div class="wrap">
+                <a href="work.html" class="link" >
+                    <i class="fas fa-user-tie"></i>
+                    <span>Work</span>
+                </a>
+            </div>
+            <div class="wrap">
+                <a href="life.html" class="link" >
+                    <i class="fas fa-hand-spock"></i>
+                    <span>Life</span>
+                </a>
+            </div>
+            <div class="wrap wrap--s">
+                <a href="#" class="link" data-toggle="modal" data-target="#sing-in">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Sing Up</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+ <div class="modal fade" id="sing-in" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="sing-in" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content sing-in-modal">    
+            <div class="modal-body">
+                <div class="btn-close">
+                    <a href="#" class="close-x" data-dismiss="modal"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="container-fluid p-0">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 col-sm-6">
+                            <h2>Create Account</h2>
+                            <p>It's free and hardly takes more than 30 seconds.</p>
+                            <div class="row">
+                                <div class="col">
+                                    <form onsubmit="return false;" class="text-center">
+                                        <div class="row justify-content-center">
+                                            <div class="col-10">
+                                                <div class="input-group">
+                                                    <span><i class="fas fa-user"></i></span>
+                                                    <input type="text" id="username" placeholder="Username">
+                                                </div>
+                                            </div>
+                                            <div class="col-10 mtt">
+                                                <div class="input-group">
+                                                    <span><i class="far fa-paper-plane"></i></span>
+                                                    <input type="email" id="email" placeholder="Email Address">
+                                                </div>
+                                            </div>
+                                            <div class="col-10 mtt">
+                                                <div class="input-group">
+                                                    <span><i class="fas fa-user-lock"></i></span>
+                                                    <input type="password" id="password" placeholder="Password" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 mtt">
+                                                <div class="input-group">
+                                                    <span><i class="fas fa-lock"></i></span>
+                                                    <input type="password" id="password-c" placeholder="Confirm Password" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 text-center mtt">
+                                                <button type="submit" class="sub-button">SIGN UP</button>
+                                            </div>
+                                            <div class="col-10 text-center mtt">
+                                            <p>By clicking the Sign Up button, you agree to our 
+                                                <a href="https://www.privacypolicyonline.com/live.php?token=IMj9TW9eb3ChJcdsqhVgrUpg1siitImu" target="_blank">Privacy Policy.</a></p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2>Already and member!</h2>
+                                    <p>Enter your login details:</p>
+                                </div>
+                                <div class="col-12">
+                                    <form onsubmit="return false;" class="text-center">
+                                        <div class="row justify-content-center">
+                                            <div class="col-10">
+                                                <div class="input-group">
+                                                    <span><i class="fas fa-user"></i></span>
+                                                    <input type="text" id="username-log" placeholder="Username or Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-10 mtt">
+                                                <div class="input-group">
+                                                    <span><i class="fas fa-user-lock"></i></span>
+                                                    <input type="password" id="password-log" placeholder="Password" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 text-center mtt">
+                                                <button type="submit" class="sub-button">LOGIN</button>
+                                            </div>
+                                            <div class="col-10 text-center mtt">
+                                                <p><i class="fas fa-handshake"></i></p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center p-4"> 
+        <div class="col">
+            <section class="section-life">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="row justify-content-center head-border">
+                            <div class="col-12 col-md-6">
+                                <h1>WORK</h1>
+                                <div class="intro-life">
+                                    <p><strong>Looking for a job!?</strong></p>
+                                    <p>
+                                      Finding work in Ireland can be difficult but with the correct preparation, 
+                                      planning, professional formatted <a href="assets/downloads/Tomislav_Sokac_CV.pdf" target="_blank">CV</a>, 
+                                      and <a href="https://www.linkedin.com/in/tomislav-sokac2" target="_blank">LinkedIn</a> 
+                                      profile this task can be a lot easier.
+                                    </p>
+                                    <p>
+                                     As with most countries, most jobs can be found in major cities so if you are living in Dublin, 
+                                     Galway, or Cork there is more chance of finding your next role, but since recent <strong>"situation"</strong> work from home is always a nice option.
+                                    </p>
+                                    <p>
+                                      Everything is on the internet these days so we take the same approach to help you land your <strong>first/next</strong> job on Irish ground.
+                                    </p>
+                                    <p><strong>So put up that beautiful smile of yours and let's hunt...</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 p-4">
+                                <div id="my-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2000">                                    
+                                    <div class="carousel-inner gal-img">
+                                        <div class="carousel-item active">
+                                            <img class="d-block img-fluid" src="assets/images/work-gal-01.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/work-gal-02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/work-gal-03.png" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/work-gal-04.png" alt="Four slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/work-gal-05.png" alt="Fifth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/work-gal-06.png" alt="Sixth slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="sub-h2">START HERE</h2>
+                    </div>
+                    <div class="col-12 col-lg-10 cards-wrap p-0">
+                        <div id="Card1" class="wrap">
+                            <a class="card-link-fav irishjobs_fav" href="https://www.irishjobs.ie/" target="_blank"><strong>Irishjobs.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/irishjobs.png" class="img-fluid" alt="IrishJobs">
+                            </div>
+                            <button id="showLinks1" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                IrishJobs.ie, Ireland's No. 1 recruitment website, has been bringing career seekers and recruiters together since 1995. 
+                                Trusted by over 1000 businesses in Ireland.
+                            </p> 
+                            <div class="showLinks1-grid hideLinks1-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.irishjobs.ie/" target="_blank" class="q-links a">BROWSE</a>
+                                    <a href="https://www.irishjobs.ie/careeradvice/" target="_blank" class="q-links a">ADVICE</a>
+                                    <a href="https://www.irishjobs.ie/login" target="_blank" class="q-links">ACCOUNT</a>
+                                    <a href="https://www.irishjobs.ie/company-reviews" target="_blank" class="q-links">REVIEWS</a>
+                                </div>
+                                <button id="hideLinks1" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
+                            </div>    
+                        </div>
+                        <div id="Card2" class="wrap">
+                            <a class="card-link-fav indeed_fav" href="https://ie.indeed.com/" target="_blank"><strong>Indeed.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/indeed.png" class="img-fluid" alt="Indeed">
+                            </div>
+                            <button id="showLinks2" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button> 
+                            <p class="card-text">
+                                ndeed is the #1 job site in the world1 with over 250 million unique visitors2 every month. 
+                                Indeed strives to put jobseekers first, giving them free access to search for jobs, post CVs, and research companies.
+                            </p>
+                            <div class="showLinks2-grid hideLinks2-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://ie.indeed.com/?from=gnav-homepage" class="q-links a" target="_blank">FIND JOB</a>
+                                    <a href="https://ie.indeed.com/companies" class="q-links a" target="_blank" class="q-links a">COMPANIES</a>
+                                    <a href="https://ie.indeed.com/salaries?from=gnav-acme--discovery-webapp" class="q-links a"  target="_blank">SALARIES</a>
+                                    <a href="https://ie.indeed.com/companies?from=gnav-homepage" class="q-links a" target="_blank">REVIEWS</a>
+                                </div>
+                                <button id="hideLinks2" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                        <div id="Card3" class="wrap">
+                            <a class="card-link-fav monster_fav" href="https://www.monster.com/" target="_blank"><strong>Monster.com</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/monster.png" class="img-fluid" alt="MyHome">
+                            </div>
+                            <button id="showLinks3" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                Monster is a global leader in connecting people and jobs. Every day, 
+                                Monster aims to make every workplace happier and more productive by transforming the way employers and candidates find the right fit.
+                            </p>
+                            <div class="showLinks3-grid hideLinks3-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.monster.ie/jobs/?intcid=swoop_TopNav_Find_Jobs_Browse_Jobs" class="q-links a" target="_blank">FIND JOB</a>
+                                    <a href="https://www.monster.ie/cv/post-resume?landedFrom=Header" class="q-links a" target="_blank">CV</a>
+                                    <a href="https://www.monster.ie/career-advice" class="q-links a"  target="_blank">ADVICE</a>
+                                    <a href="https://www.monster.ie/company/?intcid=swoop_Footer_Company_Profile" class="q-links a" target="_blank">TOP COMPANIES</a>
+                                </div>
+                                <button id="hideLinks3" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>  
+                        <div id="Card4" class="wrap">
+                            <a class="card-link-fav careerjet_fav" href="https://www.careerjet.ie/" target="_blank"><strong>Careerjet.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/careerjet.png" class="img-fluid" alt="CareerJet">
+                            </div>
+                            <button id="showLinks4" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                Careerjet is a job search engine designed to make the process of finding a job on the internet easier for the user. 
+                                It maps the huge selection of job offerings available on the internet in one extensive database.
+                            </p>
+                            <div class="showLinks4-grid hideLinks4-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.careerjet.ie/" class="q-links a" target="_blank">SERCH JOBS</a>
+                                    <a href="https://www.careerjet.ie/post-cv" class="q-links a" target="_blank">POST CV</a>
+                                    <a href="https://www.careerjet.ie/partners/" class="q-links a"  target="_blank">PARTNERS</a>
+                                    <a href="https://www.careerjet.ie/locations/" class="q-links a" target="_blank">LOCATIONS</a>
+                                </div>
+                                <button id="hideLinks4" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>      
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 p-2 sub-section-border"></div>
+                    <div class="col-12 col-lg-10">
+                        <div class="row justify-content-center cv-tips">
+                            <div class="col-12 col-md-6">
+                                <h1>UPGRADE</h1>
+                                <div class="intro-life">
+                                    <p><strong>"Your mission should you choose to accept it is..."</strong></p>
+                                    <p>
+                                     well, you know the rest, but did you knew you can take some 
+                                     cool and very valuable online education and earn yourself a fresh diploma or certificate.
+                                    </p>
+                                    <p>
+                                     The beauty of the courses that we present here is fully online and in your own time and pace.
+                                    </p>
+                                    <p><strong>1% Talent + 99% Hard Work = 100% Success Formula - TRUE STORY!!</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 p-4">
+                                <div id="my-carousel-upgrade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2000">                                    
+                                    <div class="carousel-inner gal-img">
+                                        <div class="carousel-item active">
+                                            <img class="d-block img-fluid" src="assets/images/cv-gal-01.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/cv-gal-02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/cv-gal-03.png" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/cv-gal-04.png" alt="Four slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/cv-gal-05.png" alt="Fifth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/cv-gal-06.png" alt="Sixth slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="row justify-content-center">          
+                    <div class="col-12 text-center">
+                        <h2 class="sub-h2">BACK TO SCHOOL</h2>
+                    </div>
+                    <div class="col-12 col-lg-10 cards-wrap p-0">
+                        <div id="Card9" class="wrap">
+                            <a class="card-link-fav code_fav" href="https://codeinstitute.net" target="_blank"><strong>CodeInstitute.net</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/code.png" class="img-fluid" alt="Code Institute">
+                            </div>
+                            <button id="showLinks9" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                We’re changing lives and careers by delivering online, 
+                                accelerated coding courses that are University Credit rated and Jobs focused, enhanced by technology but delivered by people. 
+                            </p> 
+                            <div class="showLinks9-grid hideLinks9-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://codeinstitute.net/full-stack-software-development-diploma/" target="_blank" class="q-links a">COURSE</a>
+                                    <a href="https://codeinstitute.net/enterprise/" target="_blank" class="q-links a">PARTNERS</a>
+                                    <a href="https://codeinstitute.net/reviews/" target="_blank" class="q-links a">REVIEWS</a>
+                                    <a href="https://codeinstitute.net/student-careers/" target="_blank" class="q-links a">STUDNET CAREERS</a>
+                                </div>
+                                <button id="hideLinks9" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
+                            </div>    
+                        </div>
+                        <div id="Card10" class="wrap">
+                            <a class="card-link-fav udemy_fav" href="https://www.udemy.com" target="_blank"><strong>Udemy.com</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/udemy.png" class="img-fluid" alt="Udemy">
+                            </div>
+                            <button id="showLinks10" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                The leading global marketplace for learning and instruction.
+                                By connecting students all over the world to the best instructors, 
+                                Udemy is helping individuals reach their goals and pursue their dreams. 
+                            </p>
+                            <div class="showLinks10-grid hideLinks10-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.udemy.com/" class="q-links a" target="_blank">CATEGORIES</a>
+                                    <a href="https://about.udemy.com/careers/" class="q-links a" target="_blank">CAREERS</a>
+                                    <a href="https://about.udemy.com/blog/" class="q-links"  target="_blank">BLOG</a>
+                                    <a href="https://about.udemy.com/company/" class="q-links" target="_blank">COMPANY</a>
+                                </div>
+                                <button id="hideLinks10" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                        <div id="Card11" class="wrap">
+                            <a class="card-link-fav spring_fav" href="https://springboardcourses.ie/" target="_blank"><strong>SpringboardCourses.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/spring.png" class="img-fluid" alt="SpringBoard">
+                            </div>
+                            <button id="showLinks11" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                The Springboard+ upskilling initiative in higher education offers free and subsidised courses at certificate, 
+                                degree and masters level leading to qualifications in areas where there are employment opportunities in the economy. 
+                            </p>
+                            <div class="showLinks11-grid hideLinks11-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://springboardcourses.ie/search" class="q-links a" target="_blank">SEARCH COURSE</a>
+                                    <a href="https://springboardcourses.ie/howToApply" class="q-links a" target="_blank">HOW TO APPLY</a>
+                                    <a href="https://springboardcourses.ie/reports" class="q-links"  target="_blank">REPORTS</a>
+                                    <a href="https://springboardcourses.ie/contactUs" class="q-links" target="_blank">CONTACT</a>
+                                </div>
+                                <button id="hideLinks11" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                        <div id="Card12" class="wrap">
+                            <a class="card-link-fav courses_fav" href="https://www.courses.ie/" target="_blank"><strong>Courses.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/courses.png" class="img-fluid" alt="Courses">
+                            </div>
+                            <button id="showLinks12" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                Are you looking to retrain in your career or take up a new hobby? 
+                                Courses.ie is a national database of training courses across Ireland. 
+                            </p>
+                            <div class="showLinks12-grid hideLinks12-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.courses.ie/course-search/" class="q-links a" target="_blank">FIND COURSES</a>
+                                    <a href="https://www.courses.ie/articles/" class="q-links a" target="_blank">ARTICLES</a>
+                                    <a href="https://www.courses.ie/blog/" class="q-links"  target="_blank">NEWS</a>
+                                    <a href="https://www.courses.ie/colleges/" class="q-links" target="_blank">COLEGUES</a>
+                                </div>
+                                <button id="hideLinks12" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>   
+                    </div> 
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<footer class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col">
+            <div class="row justify-content-center footer-line">
+                <div class="col-4 l"></div>
+                <div class="col-2 g"></div>
+                <div class="col-4 l"></div>
+            </div>
+        </div>
+        <div class="col-12 text-center info">
+            <ul class="link-wrap">
+                <li class="r"><a class="text-decoration-none flex-link" href="index.html">HOME</a> </li>
+                <li class="r"><a class="text-decoration-none flex-link" href="trip.html">TRIP</a></li>
+                <li><a class="text-decoration-none flex-link" href="work.html">WORK</a></li>
+                <li class="l"><a class="text-decoration-none flex-link " href="life.html">LIFE</a></li>
+            </ul>
+        </div>
+        <div class="col-10 col-lg-6 text-center news">
+            <h2>Get monthly updates and free resources</h2>
+            <form id="emailForm" onsubmit="return sendMail(this);">
+               <div class="row justify-content-center">
+                    <div class="col-10 col-md-8">
+                        <input type="text" name="name" id="name" placeholder="Your name *" required >
+                    </div>
+                    <div class="col-10 col-md-8 mt-input">
+                        <input type="email" name="email" id="email" placeholder="Your email address *" required >
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="news-btn">SUBSCRIBE</button>
+                    </div>
+               </div>
+            </form>
+        </div>
+        <div class="col-12 col-lg-10">
+            <div class="row justify-content-center social pb-4">
+                <div class="social-wrap">
+                    <a href="https://www.instagram.com" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="social-wrap">
+                    <a href="https://twitter.com/?lang=en" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="social-wrap">
+                    <a href="https://www.facebook.com/" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="social-wrap">
+                    <a href="https://www.pinterest.ie/" class="social-link" target="_blank"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="row justify-content-center ">
+                <div class="col-12 col-sm-6 text-center copy-ts">
+                    <p><strong>&#169; NewIrishLife 2020</strong> | All rights reserved</p>
+                </div> 
+                <div class="col-12 col-sm-6 text-center copy-ts">
+                    <p>Design by <a href="http://www.tomislavsokac.com/home" target="_blank"><strong>www.tomislavsokac.com</strong></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="assets/js/cards.js"></script>
+<script type="text/javascript" src="assets/js/emailnews.js"></script>
+</body>
+</html>
+
+

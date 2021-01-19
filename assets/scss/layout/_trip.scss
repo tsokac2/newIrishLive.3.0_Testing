@@ -1,0 +1,88 @@
+.section-life {
+    padding: 0;
+    .the-way-h1 {
+        font-family: $lato;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        color: $dark-grey;
+        font-weight: 700;
+        margin: 1rem 0 1.5rem 0;
+        text-align: center;
+        @include response(xs) {font-size: 2.2rem;}
+        @include response(md) {font-size: 3rem; text-align: left; letter-spacing: 2px;}
+        &::before {
+            display: inline-block;
+            content: "";
+            background-color: rgba(101, 115, 126, 0.9);
+            width: 6px;
+            margin: -3px 6px 0 0px;
+            vertical-align: middle;
+            height: 1px;
+            position: relative;
+            @include response(xxs-max) {display: none;}
+            @include response(xs) {width: 25px; margin: -3px 15px 0 0px;}}
+        &::after {
+            display: inline-block;
+            content: "";
+            background-color: rgba(101, 115, 126, 0.9);
+            width: 6px; 
+            margin: 2px 0 5px 6px;
+            vertical-align: middle;
+            height: 1px;
+            @include response(xxs-max) {display: none;}
+            @include response(xs) {width: 25px; margin: 2px 0 5px 15px;}}
+    }
+    .loc-cards-wrap {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+
+        @include response(md) {grid-template-columns: repeat(1, 1fr);}
+
+       .loc-wrap {
+           width: 5rem;
+           height: 5rem;
+           text-align: center;
+           justify-self: center;
+           border-radius: 50%;
+           @include response(sm) {
+               font-size: 2rem;
+               width: 10rem;
+               height: 10rem;
+            }
+
+            @include response(md) {
+                font-size: 2.5rem;
+                width: 13rem;
+                height: 13rem;
+             }
+                p {margin-top: .5rem;
+                    @include response(md) {
+                        margin-top: 2rem;
+                     }
+                }
+                span {
+                    display: block;
+                    font-size: 1.2rem;
+                    color: rgb(43, 43, 68);
+                    @include response(sm) {font-size: 2.5rem;}
+                    @include response(md) {font-size: 3rem;}
+                }
+            }
+        .bus{border: 5px solid #fccf00;}
+        .dart{border: 5px solid #06b074}
+        .luas {border: 5px solid  #522398;}
+        }
+
+        .map {
+            margin-top: 2rem;
+            width: 100%;
+            height: 30rem;
+            @include response(sm) {height: 40rem;}
+            @include response(md) {height: 60rem;}
+            @include response(lg) {height: 70rem;}
+            @include response(xl) {height: 80rem;}
+        }
+       
+}

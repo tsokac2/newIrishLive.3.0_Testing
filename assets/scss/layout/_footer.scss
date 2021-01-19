@@ -1,0 +1,246 @@
+.info {
+    font-family: $lato;
+    margin-top: .5rem;
+    @include response(md) {margin-top: 2rem;}
+    
+
+    .link-wrap {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        .flex-link {
+            display: block;
+            background-color: rgb(15, 99, 103);
+            color: white;
+            font-weight: 700;   
+            text-align: center;
+            width: 4.5rem;
+            padding: .5rem 0;
+
+            @include response(sm) {
+                width: 6.5rem;
+                padding: 1rem 0;
+                font-size: 1.5rem;
+            }
+
+            @include response(md) {
+                width: 10rem;
+                font-size: 2rem;
+            }
+
+            &:hover {
+                background-color:  rgba(84, 85, 136, .6);
+                transition: .5s ease;
+            }  
+           
+        }
+            .r {margin-right: 1rem;   
+                @include response(md) {margin-right: 2rem; }
+            }
+
+            .l {margin-left: 1rem;
+                @include response(md) {margin-left: 2rem;}
+            }
+    }
+
+}
+
+.news {
+    font-family: $lato;
+    margin-top: 1.5rem;
+    padding: .5rem;
+    background-color: rgb(255, 255, 255);
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top:1rem;
+        @include response(sm) {font-size: 2rem; }
+    }
+
+    form {padding: 0;}
+    .form-group {
+        padding: 0;
+        position: relative;
+       .sub-success {
+            color: rgb(3, 102, 107);
+            font-size: 1.2rem;
+            margin-top:1rem;
+            font-weight: bold;
+            @include response(xs) {font-size: 1.5rem; }
+            @include response(sm) {font-size: 2rem; }
+       }
+    }
+    .form-group input {
+        border: none;
+        border-bottom: 1px solid rgb(43, 43, 68);
+        background:none;
+        color: $dark-grey;
+        padding: 0 0 .3rem 0;
+        color: rgb(5, 65, 68);
+        font-weight: 700;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: left;
+        @include response(sm) {font-size: 1.6rem;}
+    }
+    .mt-input{margin-top: 1rem;}
+    .mt-email-input{margin-top: 1.7rem;}
+    .form-group input:focus {
+        outline: 0;
+        border-color: #777;
+    }
+    .form-group.success input {border-color: #2ecc71;}
+    .form-group.error input {border-color: #e74c3c;}
+    .form-group i {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.5rem;
+        @include response(sm) {top: 0px; right: 5px; font-size: 2rem;}
+    }
+    .form-group.success i.fa-check-circle {
+        color: #2ecc71;
+        visibility: visible;
+    }
+    .form-group.error i.fa-exclamation-circle {
+        color: #e74c3c;
+        visibility: visible;
+    }
+    .form-group small {
+        visibility: hidden;
+        color: #e74c3c;
+        position: absolute;
+        bottom: 0;
+        top:22px;
+        left: 0;
+        font-size: 1rem;
+        font-weight: bold;
+        @include response(sm) {font-size: 1.5rem;}
+    }
+    .form-group.error small {visibility: visible;}
+    .news-btn {
+        padding:0.5rem 1rem;
+        margin-top: 1.5rem;
+        background-color: rgb(15, 99, 103);
+        color:#fff;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-size:1rem;
+        border: 1px solid $green-color;
+        text-align:center;
+        cursor:pointer;
+        transition:.5s ease;
+        
+        @include response(xs) {
+            padding: 1rem 1.5rem;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            }
+
+        @include response(sm) {
+            padding: 1.2rem 3rem;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            }
+        &:hover {
+            background-color:$dark-grey;
+            color:#fff;
+        }
+    }
+}
+
+ .social {
+    font-family: $lato;
+    margin-top: .5rem;
+    background-color: rgb(255,255,255);
+    .mission-h2 {
+        font-family: $lato;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        color: $dark-grey;
+        font-weight: 700;
+        margin: 1rem 0 1.5rem 0;
+        text-align: center;
+        @include response(xs) {font-size: 1.5rem;}
+        @include response(sm) {font-size: 2rem;}
+        @include response(md) {font-size: 2.5rem; text-align: left; letter-spacing: 2px;}
+        &::before {
+            display: inline-block;
+            content: "";
+            background-color: rgba(101, 115, 126, 0.9);
+            width: 6px;
+            margin: -3px 6px 0 0px;
+            vertical-align: middle;
+            height: 1px;
+            position: relative;
+            @include response(xxs-max) {display: none;}
+            @include response(xs) {width: 25px; margin: -3px 15px 0 0px;}}
+        &::after {
+            display: inline-block;
+            content: "";
+            background-color: rgba(101, 115, 126, 0.9);
+            width: 6px; 
+            margin: 2px 0 5px 6px;
+            vertical-align: middle;
+            height: 1px;
+            @include response(xxs-max) {display: none;}
+            @include response(xs) {width: 25px; margin: 2px 0 5px 15px;}}
+    }
+    &-wrap {
+      text-align: center;
+      margin: 0 .5rem;
+      border-radius: 50%;
+      border: 1px solid $green-color;
+      background-color: rgba(8, 95, 99, 0.1);
+      @include response(sm) {margin:0 1.5rem;}
+      @include response(md) {margin-top: 2rem;}
+      .social-link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+        color: $link-color;
+        @include response(sm) {
+            width: 3.5rem;
+            height: 3.5rem;
+            font-size: 2rem;
+        }
+        &:hover {       
+            color: rgba(5, 65, 68, .8);
+            transition: width .3s ease, color .3s ease;
+        }
+      }
+    }
+  } 
+
+.copy-ts {
+    font-family: $lato;
+    font-size:1rem;
+    background-color: rgba(134, 193, 191, .2);
+    @include response(sm) {font-size: 1.5rem;}
+    @include response(md) {font-size: 2rem; padding: 1rem 0;}
+     p {
+        color: $dark-grey;
+        padding: 0;
+        margin: 0;
+        a {
+            text-decoration: none;
+            color: $link-color;
+            font-size: 1.1rem;
+            @include response(sm) {font-size: 1.5rem;}
+            @include response(md) {font-size: 2rem;}
+            &:hover {
+                color: rgb(82, 82, 126);
+                transition: width .3s ease, color .3s ease;
+            }
+        }
+    }
+}

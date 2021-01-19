@@ -1,0 +1,73 @@
+/*--- BREAKING POINTS ---*/
+@mixin response($breakpoint) {
+    @if($breakpoint == xxl) {
+        @media(min-width: 1500px) {
+            @content;
+        }
+    }
+    @if($breakpoint == xl) {
+        @media(min-width: 1200px) {
+            @content;
+        }
+    }
+    
+    @if($breakpoint == lg) {
+        @media(min-width: 992px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == md) {
+        @media(min-width: 768px) {
+            @content;
+        }
+    }
+    
+    @if($breakpoint == sm) {
+        @media(min-width: 576px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == xs) {
+        @media(min-width: 360px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == xxs) {
+        @media(min-width: 240px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == xxs-max) {
+        @media(max-width: 240px) {
+            @content;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

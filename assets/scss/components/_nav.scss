@@ -1,0 +1,172 @@
+.left {
+      font-family: $lato;
+      margin-top: 4rem;
+     
+      &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+        width: 9rem;        
+        height: 7rem;
+        font-size: 1.7rem;
+        text-decoration: none;
+        color:$green-color;
+        text-decoration: none;
+        
+        @include response(xl) {
+            width: 10rem;        
+            font-size: 2rem;
+        }
+        &:hover {
+            color:rgb(255, 255, 255);
+            background-color: rgba(8, 95, 99, 1);
+            transition: .5s ease;
+        }  
+    }
+}
+.right {
+    padding-top: 5.5rem;
+    .search-wrap {
+        position: relative;
+        padding: 0.5rem 0;
+        @include response(lg) {padding:0;} 
+        span {
+            position: absolute;
+            top:5px;
+            left:5px;
+            font-size: 1.5rem;
+            color: $green-color;
+            padding: 0 .5rem;
+            background-color: #fbfefe; 
+        }
+
+        input {
+            background-color: transparent;
+            font-size: 1rem;
+            border: none;
+            border-bottom: 1px solid $light-green;
+            text-indent: 35px;
+            width: 95%;
+            margin-left: 1rem;
+            padding: .5rem 0;
+            font-size: 1.2rem;
+            outline: none;
+            @include response(md) {font-size: 1.5rem;}
+        }
+    }
+
+    .side-icons-wrap {
+        padding-top: 0.5rem;
+        @include response(lg) {padding-top: 0;} 
+        .sing {
+            padding-right: 1.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color:$green-color;
+            @include response(lg) {
+                font-size: 2rem;
+             } 
+            &:hover {
+                color: rgba(8,95,99,.4);
+                transition: .5s ease;
+            } 
+        }
+    }   
+}
+.mobile-nav-wrap {
+    font-family: $lato;
+    padding: 1rem 0;
+    .mobile-nav-search {
+        position: relative;
+        padding: 3rem 0 0 0;
+        background-color: rgba(134, 193, 191, .2);
+        @include response(md) {padding-top: 2.5rem;} 
+        input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid rgba(77, 77, 77, 0.39);
+            background:none;
+            color: $dark-grey;
+            padding: 0;
+            @include response(xs) {
+                font-size: 1.5rem;
+             } 
+            @include response(sm) {
+               font-size: 1.5rem;
+            }  
+        }
+
+        a {
+            position: absolute;
+            padding: 0 .5rem;
+            right: 0;
+            color: rgba(5, 65, 68, .6);
+            background-color: inherit; 
+            @include response(xxs) {
+                top: .5rem;
+                right: 1rem;
+                font-size: 1rem;
+                }  
+            @include response(xs) {
+                font-size: 1.5rem;
+                }
+            @include response(sm) {
+                font-size: 2rem;
+                top:0rem;
+                right: 1.5rem;
+                } 
+        }
+    }
+
+    button {
+        margin-top: 1.5rem;
+        i {font-size: 1.8rem;}
+    }
+
+}
+.nav-padding {padding: 0;}
+.nav-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr );
+    grid-gap: 2rem;
+    padding: 0 4rem 2rem 4rem; 
+.wrap {
+
+    border: 1px solid  rgba(201, 201, 201, 0.5);
+    background-color: rgb(15, 99, 103);
+    padding-bottom: .5rem;
+
+        &--s {
+            grid-column: 1 / span 2;
+            grid-row: span;
+        }
+        .link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            padding-top: 0.5rem;
+
+            i{
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+            color: rgba(255, 255, 255, 0.8);
+            @include response(xxs-max) {font-size: 1rem;} 
+            }
+
+            span {
+            color: rgb(255, 255, 255);
+            font-size: 1.3rem;
+            font-weight: 700;
+            @include response(xxs-max) {font-size: 1rem;} 
+            }
+        }
+    }
+}
+
+
+
+
+
+

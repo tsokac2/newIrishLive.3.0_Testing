@@ -1,0 +1,88 @@
+.sing-in-modal {
+    font-family: $lato;
+    .mtt {margin-top: 1.5rem;}
+     h2 {
+         color: $green-color;
+         font-weight: 700;
+         padding: 0;
+         margin: 1rem 0;
+         @include response(md) {font-size: 2.3rem;}
+     }
+     p {
+        padding: 0;
+        margin: .5rem 0;
+        color: rgba(29,37,40, .6);
+        font-size: 1.2rem;
+        font-weight: 400;
+        @include response(md) {font-size: 1.5rem;}
+     }
+
+    .btn-close {
+        position: relative;
+        background-color: saddlebrown;
+        margin: 0;
+        padding: 0;
+        
+        .close-x {
+            position: absolute;
+            top: 0;
+            right: 5px;
+            z-index: 10;
+            font-size: 2rem;
+            text-decoration: none;
+            color: rgba(29,37,40, .5);
+            @include response(md) {
+                font-size: 1.5rem;
+                right: 2px;
+            }
+        }
+    }
+
+    .input-group {
+        position: relative;
+        span {
+            position: absolute;
+            top:5px;
+            left:5px;
+            font-size: 1.5rem;
+            color: $green-color;
+        }
+        input {
+            background-color: transparent;
+            font-size: 1rem;
+            border: none;
+            border-bottom: 1px solid $light-green;
+            text-indent: 35px;
+            width: 100%;
+            padding: .5rem 0;
+            font-size: 1.2rem;
+            @include response(md) {font-size: 1.5rem;}
+        }
+    }
+
+    .sub-button {
+        padding:0.5rem 6rem;
+        background:rgba($green-color,.25);
+        color: $green-color;
+        letter-spacing: 1px;
+        font-weight: 900;
+        font-size: 1.2rem;
+        border: 1px solid $green-color;
+        text-align:center;
+        cursor:pointer;
+        transition:.5s ease;
+
+        @include response(sm) {
+            padding: 1.2rem 8rem;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            }
+
+            @include response(md) {font-size: 1.2rem;}
+
+        &:hover {
+            background-color:$green-color;
+            color: rgb(255, 255, 255);
+        }
+    }
+}

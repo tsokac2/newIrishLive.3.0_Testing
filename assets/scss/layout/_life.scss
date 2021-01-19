@@ -1,0 +1,303 @@
+.section-life {
+        padding: 0;
+    .footer-line {padding-bottom: 0;}
+    .cv-tips {margin-top: 2rem;
+        @include response(xs) {font-size: 4rem;}
+    }
+    h1 {
+       font-family: $lato;
+       font-size: 2.2rem;
+       letter-spacing: 2px;
+       color: $dark-grey;
+       font-weight: 700;
+       margin: 1rem 0 1.5rem 0;
+       text-align: center;
+       @include response(xs) {font-size: 3rem;}
+       @include response(md) {font-size: 3.5rem; text-align: left;}
+       &::before {
+           display: inline-block;
+           content: "";
+           background-color: rgba(101, 115, 126, 0.9);
+           width: 25px;
+           margin: -3px 15px 0 0px;
+           vertical-align: middle;
+           height: 1px;
+           position: relative;   
+       }
+       &::after {
+           display: inline-block;
+           content: "";
+           background-color: rgba(101, 115, 126, 0.9);
+           width: 25px;
+           margin: 2px 0 5px 15px;
+           vertical-align: middle;
+           height: 1px;
+       }
+   }
+   .intro-life {
+       padding: 0;
+       p:not(:first-child){margin-top: 1rem;}
+        p {
+            font-family: $lato;
+            font-size: 1.5rem;
+            color: $green-color;
+            padding: 0;
+            margin: 0;
+            @include response(sm) {font-size: 2rem;}
+            //@include response(md) {font-size: 2.5rem;}
+
+            a {
+                text-decoration: none;
+                color: #522398;
+                font-weight: 700;
+                transition: all .3s ease;
+
+                &:hover{
+                    color: $link-color;
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    .gal-images {
+        padding: 0;
+        images {
+            margin: 0 auto;
+            @include response(sm) {width: 70%;}
+            @include response(md) {width: 90%;}
+            @include response(xl) {width: 80%;}
+        }
+    }
+    .sub-section-border {
+        margin-top: 2rem;
+        background-color: rgba(8, 95, 99, .6);
+        @include response(sm) {font-size: 2rem;}
+    }
+   .sub-h2 {
+       font-family: $lato;
+       font-size: 1.5rem;
+       color: $dark-grey;
+       font-weight: 700;
+       margin: 1rem 0;
+       @include response(sm) {font-size: 2rem;}
+       @include response(md) {
+           font-size: 2.8rem; letter-spacing: 2px;
+           margin: 3rem 0;
+        }
+       &::before {
+        display: inline-block;
+        content: "";
+        background-color: rgba(101, 115, 126, 0.9);
+        width: 15px;
+        margin: -3px 5px 0 0;
+        vertical-align: middle;
+        height: 1px;
+        position: relative;
+        @include response(xxs-max) {display: none;}
+        @include response(xs) {
+            width: 25px;
+            margin-right:15px;
+        }      
+    }
+    &::after {
+        display: inline-block;
+        content: "";
+        background-color: rgba(101, 115, 126, 0.9);
+        width: 15px;
+        margin: 2px 0 5px 5px;
+        vertical-align: middle;
+        height: 1px;
+        @include response(xxs-max) {display: none;}
+        @include response(xs) {
+            width: 25px;
+            margin-left: 15px;
+        }   
+    }
+      
+}
+  .cards-wrap {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.5rem;
+        @include response(xs) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+        }
+        @include response(md) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+        }
+        .wrap-rel {
+            position: relative;
+            z-index: 2000;
+            background-image: linear-gradient(to bottom , rgb(255, 255, 255),rgb(172, 244, 242));
+        }
+       .wrap {
+           padding: 1.5rem .5rem;
+           justify-self: center;
+           border: 1px solid rgba(5,65,68, 0.2);
+           border-top: 2px solid $green-color;
+           
+            .card-link-fav {
+                display: block;
+                width: 100%;
+                padding: .5rem 0;
+                background-repeat: no-repeat;
+                background-position: left center;
+                background-size: 2rem 2rem;
+                text-indent: 3rem;
+                font-size: 1.3rem;
+                text-decoration: none;
+                color: $green-color;
+                transition: all .3s ease;
+                &:hover {color: rgba(0,0,0, 0.6);}
+                @include response(sm) {
+                    background-size: 2.5rem 2.5rem;
+                    font-size: 2rem;
+                }
+            }
+            .rent_fav { background-image: url(../images/rent_fav.png);}
+            .let_fav { background-image: url(../images/let_fav.png);}
+            .m-home_fav { background-image: url(../images/m-home_fav.png);}
+            .daft_fav { background-image: url(../images/daft_fav.png);}
+            .eir_fav { background-image: url(../images/eir_fav.png);}
+            .three_fav { background-image: url(../images/three_fav.png);}
+            .vodafone_fav { background-image: url(../images/vodafone_fav.png);}
+            .tesco_fav { background-image: url(../images/tesco_fav.png);}
+            .dunnes_fav { background-image: url(../images/dunnes_fav.png);}
+            .aldi_fav { background-image: url(../images/aldi_fav.png);}
+            .lidl_fav { background-image: url(../images/lidl_fav.png);}
+            .jet_fav { background-image: url(../images/jet_fav.png);}
+            .kiwi_fav { background-image: url(../images/kiwi_fav.png);}
+            .sky_fav { background-image: url(../images/sky_fav.png);}
+            .edreams_fav { background-image: url(../images/edreams_fav.png);}
+            .dublinbus_fav { background-image: url(../images/dublinbus_fav.png);}
+            .luas_fav { background-image: url(../images/luas_fav.png);}
+            .dart_fav { background-image: url(../images/dart_fav.png);}
+            .aircoach_fav { background-image: url(../images/aircoach_fav.png);}
+            .irishjobs_fav { background-image: url(../images/irishjobs_fav.png);}
+            .monster_fav { background-image: url(../images/monster_fav.png);}
+            .careerjet_fav { background-image: url(../images/carrerjet_fav.png);}
+            .indeed_fav { background-image: url(../images/indeed_fav.png);}
+            .code_fav { background-image: url(../images/code_fav.png);}
+            .udemy_fav { background-image: url(../images/udemy_fav.png);}
+            .spring_fav { background-image: url(../images/spring_fav.png);}
+            .courses_fav { background-image: url(../images/courses_fav.png);}
+
+            .card-text {
+                font-size: 1.2rem;
+                text-align: left;
+                margin: 0;
+                color: $green-color;
+                @include response(sm) {font-size: 1.8rem;}
+            }
+            .showLinks1-grid,
+            .showLinks2-grid,
+            .showLinks3-grid,
+            .showLinks4-grid,
+            .showLinks5-grid,
+            .showLinks6-grid,
+            .showLinks7-grid,
+            .showLinks8-grid,
+            .showLinks9-grid,
+            .showLinks10-grid,
+            .showLinks11-grid,
+            .showLinks12-grid
+            {display: none;}
+
+            
+            .load-links-btn {
+                padding:0.2rem 1rem;
+                margin: 1rem 0 1rem 0;
+                background-color: rgb(15, 99, 103);
+                color:#fff;
+                letter-spacing: 1px;
+                font-weight: 700;
+                font-size:1rem;
+                border: 1px solid $green-color;
+                text-align:center;
+                cursor:pointer;
+                transition:.5s ease;
+                &:hover {
+                    background-color:$dark-grey;
+                    color:#fff;
+                }
+                @include response(sm) {font-size: 1.5rem;}
+                
+                i {
+                    margin: -.5rem 0 0 1rem;
+                    font-size: 2rem;
+                    padding: 0;
+                }
+            }
+
+            .rel-card {
+                position: relative;
+                z-index: 2000;
+                }
+                
+            .q-links-wrap {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: .5rem;
+                margin-top: .5rem;
+                        
+                .q-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    text-decoration: none;
+                    padding: 1rem 1.5rem;
+                    background-color: rgba(134, 193, 191, .6);
+                    color: $green-color;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    transition: all .2s ease-in;
+                    &:hover {background-color: rgba(255, 255, 255, 1);}
+                    @include response(sm) {font-size: 1.6rem;}
+                    }
+                            
+                    a { margin-bottom: .5rem;}      
+                }
+            
+                .hideLinks-btn {
+                    padding:0.5rem;
+                    color:$green-color;
+                    letter-spacing: 1px;
+                    font-weight: 700;
+                    font-size:2rem;
+                    background: none;
+                    border: none;
+                    text-align:center;
+                    cursor:pointer;
+                    transition:.5s ease;
+                   
+
+                    &::before {
+                        display: inline-block;
+                        content: "";
+                        background-color: rgba(101, 115, 126, 0.9);
+                        width: 25px;
+                        margin: -3px 15px 0 0px;
+                        vertical-align: middle;
+                        height: 1px;
+                        position: relative;   
+                    }
+             
+                    &::after {
+                        display: inline-block;
+                        content: "";
+                        background-color: rgba(101, 115, 126, 0.9);
+                        width: 25px;
+                        margin: 2px 0 5px 15px;
+                        vertical-align: middle;
+                        height: 1px;
+                    }
+                    &:hover {color:$dark-grey;}
+                    @include response(sm) {font-size: 2.5rem;}
+                }
+            }
+        }
+}
