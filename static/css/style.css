@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/*--- COLOR VARIABLES ---*/
-/*--- FONT FAMILY VARIABLES ---*/
-/*--- BREAKING POINTS ---*/
 * {
   margin: 0;
   padding: 0; }
@@ -48,6 +45,7 @@ body {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.5); }
 
+/*START CODE SOURCE - https://silvawebdesigns.com/how-to-change-the-bootstrap-4-carousel-to-a-fade-transition-instead-of-slide/*/
 .carousel-fade .carousel-item {
   opacity: 0;
   transition-duration: .6s;
@@ -69,6 +67,7 @@ body {
 .carousel-fade .active.carousel-item-prev {
   transform: translateX(0);
   transform: translate3d(0, 0, 0); }
+/*END CODE SOURCE - https://silvawebdesigns.com/how-to-change-the-bootstrap-4-carousel-to-a-fade-transition-instead-of-slide/*/
 
 .section-home {
   padding: 0; }
@@ -840,7 +839,8 @@ body {
       color: #03666b;
       font-size: 1.2rem;
       margin-top: 1rem;
-      font-weight: bold; }
+      font-weight: bold;
+      visibility: hidden;}
       @media (min-width: 360px) {
         .news .form-group .sub-success {
           font-size: 1.5rem; } }
