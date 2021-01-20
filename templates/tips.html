@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
 </head>
-
 <body>
-
-    <h1>I'm part of the base template!</h1>
-    {% block content %}
-    {% endblock %}
-
+    {% for tips in tips %}
+        {{ tips.tips_category }}<br>
+        {{ tips.tips_title }}<br>
+        {{ tips.tips_description }}<br>
+        {{ tips.due_date }}<br>
+    {% endfor %}
 </body>
-
 </html>
