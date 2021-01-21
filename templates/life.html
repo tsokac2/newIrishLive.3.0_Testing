@@ -1,0 +1,413 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row justify-content-center p-4">
+        <div class="col">
+            <section class="section-life">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="row justify-content-center head-border">
+                            <div class="col-12 col-md-6">
+                                <h1>LIFE</h1>
+                                <div class="intro-life">
+                                    <p><strong>Beauty, culture, great craic, and plenty to do!</strong></p>
+                                    <p>There’s always craic to be had, and you’re never more than a stone’s throw away
+                                        from nature.</p>
+                                    <p><strong>But first, let's cover the essentials!</strong></p>
+                                    <p>
+                                        In this section, we cover some most important factors for a fresh start on a
+                                        <strong>"GREEN ISLAND"</strong>.
+                                        We have a source for you some of the most popular rental websites, mobile
+                                        operators
+                                        and grocery shops for your quick and easy search!
+                                    </p>
+                                    <p><strong>Let's dig in...</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 p-4">
+                                <div id="my-carousel" class="carousel slide carousel-fade" data-ride="carousel"
+                                    data-interval="2000">
+                                    <div class="carousel-inner gal-img">
+                                        <div class="carousel-item active">
+                                            <img class="d-block img-fluid" src="assets/images/life-gal-01.png"
+                                                alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/life-gal-02.png"
+                                                alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/life-gal-03.png"
+                                                alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/life-gal-04.png"
+                                                alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/life-gal-05.png"
+                                                alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/life-gal-06.png"
+                                                alt="Third slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="sub-h2">ACCOMMODATION</h2>
+                    </div>
+                    <div class="col-12 col-lg-10 cards-wrap p-0">
+                        <div id="Card1" class="wrap">
+                            <a class="card-link-fav rent_fav" href="https://www.rent.ie/"
+                                target="_blank"><strong>Rent.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/rent.png" class="img-fluid" alt="Rent">
+                            </div>
+                            <button id="showLinks1" class="load-links-btn">Quick Links...<i
+                                    class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                Rent.ie was launched in November 2008.
+                                Our aim is to provide the fastest, easiest-to-use
+                                and most up-to-date rental website in the marketplace
+                            </p>
+                            <div class="showLinks1-grid hideLinks1-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.rent.ie/rooms-to-rent/" target="_blank"
+                                        class="q-links a">SHARE</a>
+                                    <a href="https://www.rent.ie/short-lets/" target="_blank" class="q-links a">SHORT
+                                        LETS</a>
+                                    <a href="https://www.rent.ie/student-accommodation/" target="_blank"
+                                        class="q-links">STUDENTS</a>
+                                    <a href="https://www.rent.ie/holiday-homes/" target="_blank" class="q-links">HOLIDAY
+                                        HOMES</a>
+                                </div>
+                                <button id="hideLinks1" class="hideLinks-btn"><i
+                                        class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                        <div id="Card2" class="wrap">
+                            <a class="card-link-fav let_fav" href="https://www.let.ie/"
+                                target="_blank"><strong>Let.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/let.png" class="img-fluid" alt="Let">
+                            </div>
+                            <button id="showLinks2" class="load-links-btn">Quick Links...<i
+                                    class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                Let.ie lists the widest selection of properties to let in Ireland.
+                                The website has 4,920 properties online, with thousands more added on a daily basis.
+                            </p>
+                            <div class="showLinks2-grid hideLinks2-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.let.ie/short-term-rental/" class="q-links a"
+                                        target="_blank">SHORT</a>
+                                    <a href="https://www.let.ie/holiday-homes/" class="q-links a"
+                                        target="_blank">HOLIDAY</a>
+                                    <a href="https://www.let.ie/" class="q-links a" target="_blank">RENT</a>
+                                    <a href="https://www.let.ie/commercial-property/" class="q-links"
+                                        target="_blank">PROPERTY</a>
+                                </div>
+                                <button id="hideLinks2" class="hideLinks-btn"><i
+                                        class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                        <div id="Card4" class="wrap">
+                            <a class="card-link-fav daft_fav" href="https://www.daft.ie/"
+                                target="_blank"><strong>Daft.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/daft-ie.png" class="img-fluid" alt="Daft">
+                            </div>
+                            <button id="showLinks4" class="load-links-btn">Quick Links...<i
+                                    class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                Founded in 1997 by brothers Eamonn and Brian Fallon.
+                                Daft.ie is the number one destination for property searchers and connects property in
+                                Ireland!
+                            </p>
+                            <div class="showLinks4-grid hideLinks4-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.daft.ie/homes-to-rent" class="q-links a"
+                                        target="_blank">RENT</a>
+                                    <a href="https://www.daft.ie/rooms-to-rent" class="q-links a"
+                                        target="_blank">SHARE</a>
+                                    <a href="https://www.daft.ie/property-for-sale/ireland/apartments" class="q-links a"
+                                        target="_blank">APP BUY</a>
+                                    <a href="https://www.daft.ie/commercial-property" class="q-links a"
+                                        target="_blank">TO LEASE</a>
+                                </div>
+                                <button id="hideLinks4" class="hideLinks-btn"><i
+                                        class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                        <div id="Card3" class="wrap">
+                            <a class="card-link-fav m-home_fav" href="https://www.myhome.ie/"
+                                target="_blank"><strong>MyHome.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/m-home.png" class="img-fluid" alt="MyHome">
+                            </div>
+                            <button id="showLinks3" class="load-links-btn">Quick Links...<i
+                                    class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                MyHome.ie is Ireland's leading property and homes portal.
+                                Established in 2001, has transformed the experience of looking for a home for thousands
+                                of house hunters.
+                            </p>
+                            <div class="showLinks3-grid hideLinks3-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.myhome.ie/rentals/ireland/apartment-to-rent" class="q-links a"
+                                        target="_blank">APP RENT</a>
+                                    <a href="https://www.myhome.ie/rentals/ireland/house-to-rent" class="q-links a"
+                                        target="_blank">HOLIDAY</a>
+                                    <a href="https://www.myhome.ie/rentals/ireland/share/shared-accommodation"
+                                        class="q-links a" target="_blank">TO SHARE</a>
+                                    <a href="https://www.myhome.ie/auctions" class="q-links a"
+                                        target="_blank">AUCTIONS</a>
+                                </div>
+                                <button id="hideLinks3" class="hideLinks-btn"><i
+                                        class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 p-2 sub-section-border"></div>
+                    <div class="col-12 text-center">
+                        <h2 class="sub-h2">MOBILE NETWORKS</h2>
+                    </div>
+                    <div class="col-12 col-lg-10 cards-wrap p-0">
+                        <div id="Card5" class="wrap">
+                            <a class="card-link-fav eir_fav" href="https://www.eir.ie/"
+                                target="_blank"><strong>Eir.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/eir.png" class="img-fluid" alt="Eir">
+                            </div>
+                            <button id="showLinks5" class="load-links-btn">Quick Links...<i
+                                    class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                Our vision is to be at the centre of your digital world. We're here to help you work,
+                                play and learn, to connect everyone and everything, from large cities to small villages.
+                            </p>
+                            <div class="showLinks5-grid hideLinks5-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.eir.ie/store/mobile/phones/prepay" target="_blank"
+                                        class="q-links a">MOBILE</a>
+                                    <a href="https://www.eir.ie/broadband/" target="_blank"
+                                        class="q-links a">BROADBAND</a>
+                                    <a href="https://www.eir.ie/tv/" target="_blank" class="q-links a">TV</a>
+                                    <a href="https://www.eir.ie/sport/" target="_blank" class="q-links a">SPORT</a>
+                                </div>
+                                <button id="hideLinks5" class="hideLinks-btn"><i
+                                        class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                        <div id="Card6" class="wrap">
+                            <a class="card-link-fav three_fav" href="https://www.three.ie/"
+                                target="_blank"><strong>Three.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/three.png" class="img-fluid" alt="Three">
+                            </div>
+                            <button id="showLinks6" class="load-links-btn">Quick Links...<i
+                                    class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                Three is one of Ireland’s leading mobile operators with 35%
+                                market share and almost 2.4 million customers (as of August 2020).
+                            </p>
+                            <div class="showLinks6-grid hideLinks6-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.three.ie/buy.html" class="q-links a" target="_blank">SHOP</a>
+                                    <a href="https://www.three.ie/3plus.html" class="q-links a"
+                                        target="_blank">3PLUS</a>
+                                    <a href="https://www.three.ie/3money.html" class="q-links a"
+                                        target="_blank">3MONEY</a>
+                                    <a href="https://www.three.ie/5g.html" class="q-links a" target="_blank">5G</a>
+                                </div>
+                                <button id="hideLinks6" class="hideLinks-btn"><i
+                                        class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                        <div id="Card7" class="wrap">
+                            <a class="card-link-fav vodafone_fav" href="https://n.vodafone.ie/en.html"
+                                target="_blank"><strong>Vodafone.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/vodafone.png" class="img-fluid" alt="Vodafone">
+                            </div>
+                            <button id="showLinks7" class="load-links-btn">Quick Links...<i
+                                    class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                You, our customers, have chosen to trust us.
+                                In return, we must strive to anticipate and understand your needs and delight you with
+                                our service.
+                            </p>
+                            <div class="showLinks7-grid hideLinks7-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://n.vodafone.ie/shop/bill-pay-plans.html" class="q-links a"
+                                        target="_blank">BILL-PAY</a>
+                                    <a href="https://n.vodafone.ie/shop.html" class="q-links a" target="_blank">SHOP</a>
+                                    <a href="https://n.vodafone.ie/shop/broadband.html" class="q-links a"
+                                        target="_blank">BROADBAND</a>
+                                    <a href="https://n.vodafone.ie/shop/tv.html" class="q-links a"
+                                        target="_blank">TV</a>
+                                </div>
+                                <button id="hideLinks7" class="hideLinks-btn"><i
+                                        class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                        <div id="Card8" class="wrap">
+                            <a class="card-link-fav tesco_fav" href="https://www.tescomobile.ie"
+                                target="_blank"><strong>TescoMobile.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/tescomobile.png" class="img-fluid" alt="Tesco Mobile">
+                            </div>
+                            <button id="showLinks8" class="load-links-btn">Quick Links...<i
+                                    class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                Thank you for choosing Tesco Mobile.
+                                With 97% coverage for 4G data, great value plans, phones and award-winning customer
+                                service we hope you enjoy our mobile network.
+                            </p>
+                            <div class="showLinks8-grid hideLinks8-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.tescomobile.ie/prepay-special-offers" class="q-links a"
+                                        target="_blank">PRE-PAY</a>
+                                    <a href="https://www.tescomobile.ie/bill-pay-phones" class="q-links a"
+                                        target="_blank">BILL-PAY</a>
+                                    <a href="https://www.tescomobile.ie/bill-pay-plans.aspx" class="q-links a"
+                                        target="_blank">PAY PLANS</a>
+                                    <a href="https://www.tescomobile.ie/prepay-phones" class="q-links a"
+                                        target="_blank">PHONES</a>
+                                </div>
+                                <button id="hideLinks8" class="hideLinks-btn"><i
+                                        class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 p-2 sub-section-border"></div>
+                    <div class="col-12 text-center">
+                        <h2 class="sub-h2">GROCERY SHOPS</h2>
+                    </div>
+                    <div class="col-12 col-lg-10 cards-wrap p-0">
+                        <div id="Card9" class="wrap">
+                            <a class="card-link-fav dunnes_fav" href="https://www.dunnesstores.com"
+                                target="_blank"><strong>Dunnesstores.com</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/dunnes.png" class="img-fluid" alt="Duness Store">
+                            </div>
+                            <button id="showLinks9" class="load-links-btn">Quick Links...<i
+                                    class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                Dunnes Stores launched in Ireland 75 years ago and revolutionised the concept of
+                                retail in Ireland by promising “Better Value” to its customers, the people of Ireland.
+                            </p>
+                            <div class="showLinks9-grid hideLinks9-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.dunnesstores.com/c/fresh-food/grocery/grocery-delivery"
+                                        target="_blank" class="q-links a">DELIVERY</a>
+                                    <a href="https://www.cafesol.ie/?l=en" target="_blank" class="q-links a">CAFE
+                                        SOL</a>
+                                    <a href="https://www.dunnesstores.com/c/home" target="_blank"
+                                        class="q-links a">HOME</a>
+                                    <a href="https://www.dunnesstores.com/c/reserve-and-collect" target="_blank"
+                                        class="q-links a">RESERVE</a>
+                                </div>
+                                <button id="hideLinks9" class="hideLinks-btn"><i
+                                        class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                        <div id="Card10" class="wrap">
+                            <a class="card-link-fav aldi_fav" href="https://www.aldi.ie/"
+                                target="_blank"><strong>Aldi.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/aldi.png" class="img-fluid" alt="Aldi">
+                            </div>
+                            <button id="showLinks10" class="load-links-btn">Quick Links...<i
+                                    class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                Aldi provides grocery products ranging from whole grain bread to ready meals.
+                                Specialised ranges include gluten free products.
+                            </p>
+                            <div class="showLinks10-grid hideLinks10-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.aldi.ie/c/specialbuys" class="q-links a"
+                                        target="_blank">SPECIAL</a>
+                                    <a href="https://www.aldi.ie/c/groceries" class="q-links a"
+                                        target="_blank">GROCERIES</a>
+                                    <a href="https://www.aldi.ie/love-ireland" class="q-links" target="_blank">LOVE
+                                        IRELAND</a>
+                                    <a href="https://www.aldi.ie/store-finder" class="q-links" target="_blank">STORE
+                                        FINDER</a>
+                                </div>
+                                <button id="hideLinks10" class="hideLinks-btn"><i
+                                        class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                        <div id="Card11" class="wrap">
+                            <a class="card-link-fav lidl_fav" href="https://www.lidl.ie"
+                                target="_blank"><strong>Lidl.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/lidl.png" class="img-fluid" alt="Lidl">
+                            </div>
+                            <button id="showLinks11" class="load-links-btn">Quick Links...<i
+                                    class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                At Lidl we pride ourselves on offering top quality products at lowest possible prices.
+                                Customer satisfaction is at the heart of everything we do!
+                            </p>
+                            <div class="showLinks11-grid hideLinks11-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.lidl.ie/special-offers" class="q-links a"
+                                        target="_blank">SPECIAL</a>
+                                    <a href="https://www.lidl.ie/super-savers" class="q-links a" target="_blank">SUPER
+                                        SAVERS</a>
+                                    <a href="https://www.lidl.ie/lidl-plus" class="q-links" target="_blank">LIDL
+                                        PLUS</a>
+                                    <a href="https://www.lidl.ie/grocery-range" class="q-links"
+                                        target="_blank">GROCERIES</a>
+                                </div>
+                                <button id="hideLinks11" class="hideLinks-btn"><i
+                                        class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                        <div id="Card12" class="wrap">
+                            <a class="card-link-fav tesco_fav" href="https://www.tesco.ie/"
+                                target="_blank"><strong>Tesco.ie</strong></a>
+                            <div class="card-img">
+                                <img src="assets/images/tesco.png" class="img-fluid" alt="Tesco Shop">
+                            </div>
+                            <button id="showLinks12" class="load-links-btn">Quick Links...<i
+                                    class="fas fa-sort-down"></i></button>
+                            <p class="card-text">
+                                As a leading retailer, with over 400,000 colleagues, we serve millions of customers
+                                every week, in our stores and online.
+                            </p>
+                            <div class="showLinks12-grid hideLinks12-grid text-center">
+                                <div class="q-links-wrap">
+                                    <a href="https://www.tesco.ie/groceries/?&icid=homepage_nav_groceries_1Start"
+                                        class="q-links a" target="_blank">GROCERIES</a>
+                                    <a href="https://www.tesco.ie/groceries/SpecialOffers/default.aspx"
+                                        class="q-links a" target="_blank">SPECIAL</a>
+                                    <a href="https://www.tesco.ie/clubcard/myaccount-register/" class="q-links a"
+                                        target="_blank">CLUB CARD</a>
+                                    <a href="https://www.tesco.ie/store-locator/ie/" class="q-links a"
+                                        target="_blank">STORE LOCATOR</a>
+                                </div>
+                                <button id="hideLinks12" class="hideLinks-btn"><i
+                                        class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

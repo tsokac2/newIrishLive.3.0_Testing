@@ -22,9 +22,20 @@ mongo = PyMongo(app)
 def home():
     return render_template("home.html")
 
+
 @app.route("/trip")
 def trip():
     return render_template("trip.html")
+
+
+@app.route("/work")
+def work():
+    return render_template("work.html")
+
+
+@app.route("/life")
+def life():
+    return render_template("life.html")
 
 
 if __name__ == "__main__":

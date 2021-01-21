@@ -14,17 +14,17 @@ function initMap() {
   });
 
         let busMarkerIcon = {
-            url:"assets/img/bus_marker.png",
+            url:"static/images/bus_marker.png",
             scaledSize: new google.maps.Size(50, 50)
         }
 
         let dartMarkerIcon = {
-            url:"assets/img/dart_marker.png",
+            url:"static/images/dart_marker.png",
             scaledSize: new google.maps.Size(50, 50)
         }
 
         let luasMarkerIcon = {
-            url:"assets/img/luas_marker.png",
+            url:"static/images/luas_marker.png",
             scaledSize: new google.maps.Size(50, 50)
         }
 

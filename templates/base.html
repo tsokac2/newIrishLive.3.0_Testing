@@ -22,8 +22,8 @@
                     <div class="row justify-content-center">
                         <a class="text-decoration-none  left-wrap border-right" href="{{ url_for('home')}}">HOME</a>
                         <a class="text-decoration-none  left-wrap border-right" href="{{ url_for('trip')}}">TRIP</a>
-                        <a class="text-decoration-none  left-wrap border-right" href="work.html">WORK</a>
-                        <a class="text-decoration-none  left-wrap " href="life.html">LIFE</a>
+                        <a class="text-decoration-none  left-wrap border-right" href="{{ url_for('work')}}">WORK</a>
+                        <a class="text-decoration-none  left-wrap " href="{{ url_for('life')}}">LIFE</a>
                     </div>
                 </div>
                 <div class="col-3 mt-4">
@@ -81,25 +81,25 @@
     <div class="collapse navbar-collapse mt-4" id="navbarSupportedContent">
         <div class="nav-mobile">
             <div class="wrap">
-                <a href="index.html" class="link">
+                <a href="{{ url_for('home')}}" class="link">
                     <i class="fas fa-home icon"></i>
                     <span>Home</span>
                 </a>
             </div>
             <div class="wrap">
-                <a href="trip.html" class="link">
+                <a href="{{ url_for('trip')}}" class="link">
                     <i class="fas fa-plane-departure"></i>
                     <span>Trip</span>
                 </a>
             </div>
             <div class="wrap">
-                <a href="work.html" class="link">
+                <a href="{{ url_for('work')}}" class="link">
                     <i class="fas fa-user-tie"></i>
                     <span>Work</span>
                 </a>
             </div>
             <div class="wrap">
-                <a href="life.html" class="link">
+                <a href="{{ url_for('life')}}" class="link">
                     <i class="fas fa-hand-spock"></i>
                     <span>Life</span>
                 </a>
@@ -299,6 +299,10 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="{{ url_for('static', filename='libraries/scripts/emailjs.js') }}"></script>
 <script src="{{ url_for('static', filename='libraries/bootstrap/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/cards.js') }}" ></script>
+<script src="{{ url_for('static', filename='js/markerclusterer_compiled.js') }}"></script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDadfKOCQK6Iu6tBeOXDAvZp5071lP8Us0&callback=initMap"></script>
+<script src="{{ url_for('static', filename='js/maps.js') }}"></script>
 <script src="{{ url_for('static',filename='js/emailnews.js') }}"></script> 
 </body>
 </html>
