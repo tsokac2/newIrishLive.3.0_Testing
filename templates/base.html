@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Irish Life | Travel | Work | Experience | Life Style</title>
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}"/>
     <meta name="description" content="Web-based travel guide for providing correct information how easily start living and working in Ireland">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet"> 
@@ -11,6 +12,8 @@
     <script src="https://kit.fontawesome.com/c8a0926547.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="{{ url_for('static', filename='libraries/scripts/emailjs.js') }}"></script>
+
 </head>
 <body>
 <div class="blur"></div>
@@ -224,10 +227,11 @@
         </div>
         <div class="col-12 text-center info">
             <ul class="link-wrap">
-                <li class="r"><a class="text-decoration-none flex-link" href="index.html">HOME</a> </li>
-                <li class="r"><a class="text-decoration-none flex-link" href="trip.html">TRIP</a></li>
-                <li><a class="text-decoration-none flex-link" href="work.html">WORK</a></li>
-                <li class="l"><a class="text-decoration-none flex-link " href="life.html">LIFE</a></li>
+                <li class="r"><a class="text-decoration-none flex-link" href="{{ url_for('home')}}">HOME</a> </li>
+                <li class="r"><a class="text-decoration-none flex-link" href="{{ url_for('trip')}}">TRIP</a></li>
+                <li><a class="text-decoration-none flex-link" href="{{ url_for('work')}}">WORK</a></li>
+                <li class="l"><a class="text-decoration-none flex-link " href="{{ url_for('life')}}">LIFE</a></li>
+                <li class="l"><a class="text-decoration-none flex-link " href="{{ url_for('life')}}">TIPS</a></li>
             </ul>
         </div>
         <div class="col-10 col-md-8 col-lg-7 text-center news">
@@ -295,14 +299,12 @@
         </div>
     </div>
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="{{ url_for('static', filename='libraries/scripts/emailjs.js') }}"></script>
 <script src="{{ url_for('static', filename='libraries/bootstrap/bootstrap.min.js') }}"></script>
 <script src="{{ url_for('static', filename='js/cards.js') }}" ></script>
-<script src="{{ url_for('static', filename='js/markerclusterer_compiled.js') }}"></script>
-<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDadfKOCQK6Iu6tBeOXDAvZp5071lP8Us0&callback=initMap"></script>
-<script src="{{ url_for('static', filename='js/maps.js') }}"></script>
-<script src="{{ url_for('static',filename='js/emailnews.js') }}"></script> 
+
+<script src="{{ url_for('static',filename='js/emailnews.js') }}"></script>
 </body>
 </html>

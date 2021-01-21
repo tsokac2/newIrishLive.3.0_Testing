@@ -25,21 +25,20 @@ var validateEmail = function(e) {
     var valid;
     var email = document.getElementById("newsEmail");
     var emailValue = email.value.trim();
-    
+
     if(emailValue === "") {
         pushErrorFor(email, "Enter Your email address!");
-        valid = false;  
+        valid = false;
     } else if (!testEmail(emailValue)){
         pushErrorFor(email, "Enter valid email address!");
-        valid = false;  
+        valid = false;
     } else {
         pushSuccessFor(email);
-        valid = true; 
+        valid = true;
     }
 
     return valid;
 };
-
 /* START - CODE SOURCE: https://www.w3resource.com/javascript/form/email-validation.php*/
 function testEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
@@ -59,7 +58,7 @@ function pushSuccessFor(input) {
 }
 
 var send = function(e) {
-    e.preventDefault(); 
+    e.preventDefault();
     e.stopPropagation();
 
     var checkName = validateName();
@@ -82,9 +81,9 @@ var reset = function (e){
 
 function TnxForSupport(tnxMessage) {
     var tnx = document.getElementById("tnx");
+    tnx.style.visibility = "visible";
     tnx.innerText = tnxMessage;
 }
-
 
 function sendEmail(inputs) {
     var tempInputs = {
@@ -92,7 +91,7 @@ function sendEmail(inputs) {
         "from_email": document.getElementById("newsEmail").value
     };
 
-    emailjs.send("service_yf3pn0p", "newIrishLife", tempInputs) 
+    emailjs.send("service_yf3pn0p", "newIrishLife", tempInputs)
         .then(function (response) {
                 console.log("SUCCESS", response);
             },
