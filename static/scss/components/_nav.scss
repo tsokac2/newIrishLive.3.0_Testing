@@ -1,36 +1,51 @@
 .left {
       font-family: $lato;
       margin-top: 4rem;
-     
+
       &-wrap {
         display: flex;
         align-items: center;
         justify-content: center;   
-        width: 9rem;        
-        height: 7rem;
+        width: 6.8rem;        
+        height: 5rem;
         font-size: 1.7rem;
         text-decoration: none;
         color:$green-color;
         text-decoration: none;
         
         @include response(xl) {
-            width: 10rem;        
+            width: 9rem;        
             font-size: 2rem;
-        }
-
-        .tips_icon {
-            width: 40px;
-            height: 40px;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-image: url(../images/tips_icon.png);
         }
         &:hover {
             color:rgb(255, 255, 255);
             background-color: rgba(8, 95, 99, 1);
             transition: .5s ease;
-        }  
+            font-weight: bold;
+        }
     }
+
+    .l-w {
+        padding-left:1rem;
+        width: 8.5rem;
+          &::after {
+              display: inline-block;
+              content: "";
+              width: 60px;
+              height: 60px;
+              margin-left: 5px;
+              vertical-align: middle;
+              background-repeat: no-repeat;
+              background-position: center; 
+              background-size: contain;
+              background-image: url(../images/tips_icon.png);
+          }
+          &:hover {
+            &::after {
+                background-image: url(../images/tips_icon_light.png);
+            }
+        }
+      }
 }
 
 .right {
