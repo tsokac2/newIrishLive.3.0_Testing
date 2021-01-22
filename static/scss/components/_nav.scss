@@ -17,6 +17,14 @@
             width: 10rem;        
             font-size: 2rem;
         }
+
+        .tips_icon {
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url(../images/tips_icon.png);
+        }
         &:hover {
             color:rgb(255, 255, 255);
             background-color: rgba(8, 95, 99, 1);
@@ -24,6 +32,7 @@
         }  
     }
 }
+
 .right {
     padding-top: 5.5rem;
     .search-wrap {
@@ -137,10 +146,6 @@
     background-color: rgb(15, 99, 103);
     padding-bottom: .5rem;
 
-        &--s {
-            grid-column: 1 / span 2;
-            grid-row: span;
-        }
         .link {
             display: flex;
             flex-direction: column;
@@ -161,6 +166,21 @@
             font-weight: 700;
             @include response(xxs-max) {font-size: 1rem;} 
             }
+
+            .icons {
+                display: block;
+                width:2rem;
+                height:2rem;
+                background-repeat: no-repeat;
+                background-position: center; 
+                background-size: contain;
+            }
+            .tips {background-image: url(../images/tips_icon_light.png);}
+            .sing-up {background-image: url(../images/sing_up.png);}
+            .work {background-image: url(../images/work_icon.png);}
+            .life {background-image: url(../images/life_icon.png);}
+            .trip {background-image: url(../images/trip_icon.png);}
+            .home {background-image: url(../images/home_icon.png);}
         }
     }
 }

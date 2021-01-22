@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merienda:wght@400;700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/c8a0926547.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" type="text/css">
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="{{ url_for('static', filename='libraries/scripts/emailjs.js') }}"></script>
 
@@ -26,7 +26,8 @@
                         <a class="text-decoration-none  left-wrap border-right" href="{{ url_for('home')}}">HOME</a>
                         <a class="text-decoration-none  left-wrap border-right" href="{{ url_for('trip')}}">TRIP</a>
                         <a class="text-decoration-none  left-wrap border-right" href="{{ url_for('work')}}">WORK</a>
-                        <a class="text-decoration-none  left-wrap " href="{{ url_for('life')}}">LIFE</a>
+                        <a class="text-decoration-none  left-wrap border-right " href="{{ url_for('life')}}">LIFE</a>
+                        <a class="text-decoration-none  left-wrap " href="{{ url_for('life')}}">TIPS <span class="tips_icon"></span></a>
                     </div>
                 </div>
                 <div class="col-3 mt-4">
@@ -85,31 +86,37 @@
         <div class="nav-mobile">
             <div class="wrap">
                 <a href="{{ url_for('home')}}" class="link">
-                    <i class="fas fa-home icon"></i>
+                    <span class="icons home"></span>
                     <span>Home</span>
                 </a>
             </div>
             <div class="wrap">
                 <a href="{{ url_for('trip')}}" class="link">
-                    <i class="fas fa-plane-departure"></i>
+                    <span class="icons trip"></span>
                     <span>Trip</span>
                 </a>
             </div>
             <div class="wrap">
                 <a href="{{ url_for('work')}}" class="link">
-                    <i class="fas fa-user-tie"></i>
+                    <span class="icons work"></span>
                     <span>Work</span>
                 </a>
             </div>
             <div class="wrap">
                 <a href="{{ url_for('life')}}" class="link">
-                    <i class="fas fa-hand-spock"></i>
+                    <span class="icons life"></span>
                     <span>Life</span>
                 </a>
             </div>
-            <div class="wrap wrap--s">
+            <div class="wrap">
+                <a href="{{ url_for('life')}}" class="link">
+                    <span class="icons tips"></span>
+                    <span>TIPS</span>
+                </a>
+            </div>
+            <div class="wrap">
                 <a href="#" class="link" data-toggle="modal" data-target="#sing-in">
-                    <i class="fas fa-user-plus"></i>
+                    <span class="icons sing-up"></span>
                     <span>Sing Up</span>
                 </a>
             </div>

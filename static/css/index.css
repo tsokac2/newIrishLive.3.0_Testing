@@ -48,7 +48,6 @@ body {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.5); }
 
-/*START CODE SOURCE - https://silvawebdesigns.com/how-to-change-the-bootstrap-4-carousel-to-a-fade-transition-instead-of-slide/*/
 .carousel-fade .carousel-item {
   opacity: 0;
   transition-duration: .6s;
@@ -70,7 +69,6 @@ body {
 .carousel-fade .active.carousel-item-prev {
   transform: translateX(0);
   transform: translate3d(0, 0, 0); }
-/*END CODE SOURCE - https://silvawebdesigns.com/how-to-change-the-bootstrap-4-carousel-to-a-fade-transition-instead-of-slide/*/
 
 .section-home {
   padding: 0; }
@@ -842,8 +840,7 @@ body {
       color: #03666b;
       font-size: 1.2rem;
       margin-top: 1rem;
-      font-weight: bold;
-      visibility: hidden;}
+      font-weight: bold; }
       @media (min-width: 360px) {
         .news .form-group .sub-success {
           font-size: 1.5rem; } }
@@ -1062,6 +1059,12 @@ body {
       .left-wrap {
         width: 10rem;
         font-size: 2rem; } }
+    .left-wrap .tips_icon {
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url(../images/tips_icon.png); }
     .left-wrap:hover {
       color: white;
       background-color: #085f63;
@@ -1174,9 +1177,6 @@ body {
     border:  1px solid  rgba(201, 201, 201, 0.5);
     background-color: #0f6367;
     padding-bottom: .5rem; }
-    .nav-mobile .wrap--s {
-      grid-column: 1 / span 2;
-      grid-row: span; }
     .nav-mobile .wrap .link {
       display: flex;
       flex-direction: column;
@@ -1197,6 +1197,25 @@ body {
         @media (max-width: 240px) {
           .nav-mobile .wrap .link span {
             font-size: 1rem; } }
+      .nav-mobile .wrap .link .icons {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; }
+      .nav-mobile .wrap .link .tips {
+        background-image: url(../images/tips_icon_light.png); }
+      .nav-mobile .wrap .link .sing-up {
+        background-image: url(../images/sing_up.png); }
+      .nav-mobile .wrap .link .work {
+        background-image: url(../images/work_icon.png); }
+      .nav-mobile .wrap .link .life {
+        background-image: url(../images/life_icon.png); }
+      .nav-mobile .wrap .link .trip {
+        background-image: url(../images/trip_icon.png); }
+      .nav-mobile .wrap .link .home {
+        background-image: url(../images/home_icon.png); }
 
 .sing-in-modal {
   font-family: "Lato", sans-serif; }
