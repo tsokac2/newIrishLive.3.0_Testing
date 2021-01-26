@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row justify-content-center p-4">
+        <div class="col">
+            <section class="section-life">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="row justify-content-center head-border">
+                            <div class="col-12 col-md-6">
+                                <h1>LIFE</h1>
+                                <div class="intro-life">
+                                    <p><strong>Beauty, culture, great craic, and plenty to do!</strong></p>
+                                    <p>There’s always craic to be had, and you’re never more than a stone’s throw away
+                                        from nature.</p>
+                                    <p><strong>But first, let's cover the essentials!</strong></p>
+                                    <p>
+                                        In this section, we cover some most important factors for a fresh start on a
+                                        <strong>"GREEN ISLAND"</strong>.
+                                        We have a source for you some of the most popular rental websites, mobile
+                                        operators
+                                        and grocery shops for your quick and easy search!
+                                    </p>
+                                    <p><strong>Let's dig in...</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 p-4">
+                                <div id="my-carousel" class="carousel slide carousel-fade" data-ride="carousel"
+                                    data-interval="2000">
+                                    <div class="carousel-inner gal-img">
+                                        <div class="carousel-item active">
+                                            <img class="d-block img-fluid" src="{{ url_for('static', filename='images/life-gal-01.png')}}"
+                                                alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="{{ url_for('static', filename='images/life-gal-02.png')}}"
+                                                alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="{{ url_for('static', filename='images/life-gal-03.png')}}"
+                                                alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="{{ url_for('static', filename='images/life-gal-04.png')}}"
+                                                alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="{{ url_for('static', filename='images/life-gal-05.png')}}"
+                                                alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="{{ url_for('static', filename='images/life-gal-06.png')}}"
+                                                alt="Third slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="sub-h2">TIPS LIST</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 p-2 sub-section-border"></div>
+                    <div class="col-12 text-center">
+                        <h2 class="sub-h2">ROAD TIPS</h2>
+                    </div>
+                    <div class="col-12 col-lg-10 cards-wrap p-0">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 p-2 sub-section-border"></div>
+                    <div class="col-12 text-center">
+                        <h2 class="sub-h2">LIFE TIPS</h2>
+                    </div>
+                    <div class="col-12 col-lg-10 cards-wrap p-0">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

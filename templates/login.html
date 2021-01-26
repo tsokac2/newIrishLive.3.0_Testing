@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div id="mainNav" class="container-fluid true">
+    <div class="row justify-content-center p-4">
+        <div class="col">
+            <section class="section-home">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10">
+                        <div class="row quote-borders p-2"></div>                    
+                    <div class="container-fluid p-0">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-12 col-sm-6">
+                                <h2>Create Account</h2>
+                                <p>It's free and hardly takes more than 30 seconds.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        {% with messages = get_flashed_messages(category_filter=["danger"]) %}
+                                            {% if messages %}
+                                                {% for message in messages %}
+                                                    <h1 class="alert alert-{{ category }}">
+                                                        {{ message | safe }}
+                                                    </h1>
+                                                {% endfor %}
+                                            {% endif %}
+                                        {% endwith %}
+
+
+                                        
+                                        <form method="POST" action="{{ url_for('login') }}" novalidate>
+                                            {{ form.hidden_tag() }}                                    
+                                            <div class="input-group">
+                                                <span><i class="far fa-paper-plane"></i></span>
+                                                {{ form.email(class="userInput") }}
+                                                {% if form.email.errors %}
+                                                <div class="invalid-feedback-error">
+                                                    {% for error in form.email.errors %}
+                                                    <small>{{ error }}</small>
+                                                    {% endfor %}
+                                                </div>
+                                                {% endif %}
+                                            </div>
+    
+                                            <div class="input-group">
+                                                <span><i class="fas fa-user-lock"></i></span>
+                                                {{ form.password(class="userInput") }}
+                                                {% if form.password.errors %}
+                                                <div class="invalid-feedback-error">
+                                                    {% for error in form.password.errors %}
+                                                    <small>{{ error }}</small>
+                                                    {% endfor %}
+                                                </div>
+                                                {% endif %}
+                                            </div>
+
+                                            <div class="input-group">
+                                                <div class="form-check">
+                                                    {{ form.remember(class="form-check-input") }}
+                                                    {{ form.remember.label(class="form-check-label") }}
+                                                </div>
+                                            </div>
+                                            {{ form.submit(class="sub-button") }}
+                                            
+                                            <div class="input-group">
+                                                <small class="text-muted ml-2">
+                                                    <a href="#">Forgot Password?</a>
+                                                </small>
+                                            </div>
+                                        </form>
+
+                                        <div class="input-group pt-3">
+                                            <small class="text-muted">
+                                                Need An Account? <a class="ml-2" href="{{ url_for('registration') }}">Sign Up Now</a>
+                                            </small>
+                                        </div>
+                                
+                    
+                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                        <div class="row quote-borders p-2"></div>
+                    </div>
+                    <div class="col-12 col-sm-10 intro-pitch">
+                        <div class="row justify-content-center pitch-wrap">
+                            <div class="col-12 col-md-6 ">
+                                <h4>HELOO PEOPLE</h4>
+                                <h1>If you watch</h1>
+                                <p><span class="font-italic"><strong>"The Hobbit: An Unexpected Journey"</strong></span>
+                                    you will understand,
+                                    if not, we highly recommended to
+                                    watch the film or read a book...both rocks!
+                                </p>
+                                <p>
+                                    <strong>Now, on to business!</strong><br>
+                                    If you are planing or even
+                                    considering moving to Ireland, this is an awesome
+                                    starting point for you!
+                                </p>
+                                <p>
+                                    Here you can find some key info when you're planing your
+                                    <strong>Irish Adventure...</strong>
+                                </p>
+
+                                <p>
+                                    If you scroll down, you will see
+                                    3 main sections that you need to make this happen nice and smooth...<br>
+                                    <strong>Let's roll . . .</strong>
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-6 composition mt-4">
+                                <img src="{{ url_for('static', filename='images/galery-01.png')}}" class="comp-photo o" alt="Gallery 01">
+                                <img src="{{ url_for('static', filename='images/galery-02.png')}}" class="comp-photo t" alt="Gallery 02">
+                                <img src="{{ url_for('static', filename='images/galery-03.png')}}" class="comp-photo te" alt="Gallery 03">
+                            </div>
+                            <div class="col-8 col-sm-10 col-md-11 col-xl-9 cards-wrap p-0">
+                                <div class="wrap">
+                                    <div class="card-img">
+                                        <img src="{{ url_for('static', filename='images/trip_home_icon.png')}}" class="img-fluid" alt="Trip">
+                                    </div>
+                                    <h2 class="card-heading text-center">Trip</h2>
+                                    <p class="card-text mt-3">
+                                        A handy section where you have the most popular web services regarding
+                                        booking a plane ticket and some tips and tricks when flying to <strong>Dublin,
+                                            Ireland!</strong>
+                                    </p>
+                                </div>
+                                <div class="wrap">
+                                    <div class="card-img">
+                                        <img src="{{ url_for('static', filename='images/work_home_icon.png')}}" class="img-fluid" alt="Work">
+                                    </div>
+                                    <h2 class="card-heading text-center">Work</h2>
+                                    <p class="card-text mt-3">
+                                        It is all about you and how you sell yourself,
+                                        plus how to find cool and possible free online courses,
+                                        for personal <strong>growth and development!</strong>
+                                    </p>
+                                </div>
+                                <div class="wrap">
+                                    <div class="card-img">
+                                        <img src="{{ url_for('static', filename='images/life_home_icon.png')}}" class="img-fluid" alt="Life">
+                                    </div>
+                                    <h2 class="card-heading text-center">Life</h2>
+                                    <p class="card-text mt-3">
+                                        Well, now we are living in a <strong>"strange"</strong> time regarding social
+                                        gatherings.
+                                        As soon this is over you can hit all "hot" spots around Ireland and Dublin!
+                                    </p>
+                                </div>
+                                <div class="wrap">
+                                    <div class="card-img">
+                                        <img src="{{ url_for('static', filename='images/news_home_icon.png')}}" class="img-fluid" alt="News">
+                                    </div>
+                                    <h2 class="card-heading text-center">News</h2>
+                                    <p class="card-text mt-3">
+                                        Receive our news and updates on a regular basis regarding jobs,
+                                        business events, lifestyle, etc.
+                                        Maybe you have an idea for the site section...<strong>we are
+                                            listening?!</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}

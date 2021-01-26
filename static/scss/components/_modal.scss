@@ -1,6 +1,62 @@
+.mtt {margin-top: 1.5rem;}
+.input-group {
+    position: relative;
+    margin-bottom: 3rem;
+    span {
+        position: absolute;
+        top:5px;
+        left:5px;
+        font-size: 1.5rem;
+        color: $green-color;
+    }
+}
+
+.userInput {
+    background-color: transparent;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid $light-green;
+    text-indent: 35px;
+    width: 100%;
+    padding: .5rem 0;
+    font-size: 1.2rem;
+    @include response(md) {font-size: 1.5rem;}
+}
+
+.sub-button {
+    padding:0.5rem 6rem;
+    background:rgba($green-color,.25);
+    color: $green-color;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    border: 1px solid $green-color;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+
+    @include response(sm) {
+        padding: 1.2rem 8rem;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        }
+
+        @include response(md) {font-size: 1.2rem;}
+
+    &:hover {
+        background-color:$green-color;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.invalid-feedback-error {
+    color: red;
+    font-size: 2rem;
+}
+
 .sing-in-modal {
     font-family: $lato;
-    .mtt {margin-top: 1.5rem;}
+    
      h2 {
          color: $green-color;
          font-weight: 700;
@@ -38,51 +94,7 @@
         }
     }
 
-    .input-group {
-        position: relative;
-        span {
-            position: absolute;
-            top:5px;
-            left:5px;
-            font-size: 1.5rem;
-            color: $green-color;
-        }
-        input {
-            background-color: transparent;
-            font-size: 1rem;
-            border: none;
-            border-bottom: 1px solid $light-green;
-            text-indent: 35px;
-            width: 100%;
-            padding: .5rem 0;
-            font-size: 1.2rem;
-            @include response(md) {font-size: 1.5rem;}
-        }
-    }
+ 
 
-    .sub-button {
-        padding:0.5rem 6rem;
-        background:rgba($green-color,.25);
-        color: $green-color;
-        letter-spacing: 1px;
-        font-weight: 900;
-        font-size: 1.2rem;
-        border: 1px solid $green-color;
-        text-align:center;
-        cursor:pointer;
-        transition:.5s ease;
 
-        @include response(sm) {
-            padding: 1.2rem 8rem;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            }
-
-            @include response(md) {font-size: 1.2rem;}
-
-        &:hover {
-            background-color:$green-color;
-            color: rgb(255, 255, 255);
-        }
-    }
 }

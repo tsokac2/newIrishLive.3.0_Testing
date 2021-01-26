@@ -794,8 +794,12 @@ body {
       color: white;
       font-weight: 700;
       text-align: center;
-      width: 4.5rem;
+      width: 3.5rem;
       padding: .5rem 0; }
+      @media (min-width: 360px) {
+        .info .link-wrap .flex-link {
+          width: 4.5rem;
+          padding: 1rem 0; } }
       @media (min-width: 576px) {
         .info .link-wrap .flex-link {
           width: 6.5rem;
@@ -1228,10 +1232,61 @@ body {
       .nav-mobile .wrap .link .home {
         background-image: url(../images/home_icon.png); }
 
+.mtt {
+  margin-top: 1.5rem; }
+
+.input-group {
+  position: relative;
+  margin-bottom: 3rem; }
+  .input-group span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+    color: #054144; }
+
+.userInput {
+  background-color: transparent;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid #86c1bf;
+  text-indent: 35px;
+  width: 100%;
+  padding: .5rem 0;
+  font-size: 1.2rem; }
+  @media (min-width: 768px) {
+    .userInput {
+      font-size: 1.5rem; } }
+
+.sub-button {
+  padding: 0.5rem 6rem;
+  background: rgba(5, 65, 68, 0.25);
+  color: #054144;
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-size: 1.2rem;
+  border: 1px solid #054144;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease; }
+  @media (min-width: 576px) {
+    .sub-button {
+      padding: 1.2rem 8rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem; } }
+  @media (min-width: 768px) {
+    .sub-button {
+      font-size: 1.2rem; } }
+  .sub-button:hover {
+    background-color: #054144;
+    color: white; }
+
+.invalid-feedback-error {
+  color: red;
+  font-size: 2rem; }
+
 .sing-in-modal {
   font-family: "Lato", sans-serif; }
-  .sing-in-modal .mtt {
-    margin-top: 1.5rem; }
   .sing-in-modal h2 {
     color: #054144;
     font-weight: 700;
@@ -1266,45 +1321,3 @@ body {
         .sing-in-modal .btn-close .close-x {
           font-size: 1.5rem;
           right: 2px; } }
-  .sing-in-modal .input-group {
-    position: relative; }
-    .sing-in-modal .input-group span {
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      font-size: 1.5rem;
-      color: #054144; }
-    .sing-in-modal .input-group input {
-      background-color: transparent;
-      font-size: 1rem;
-      border: none;
-      border-bottom: 1px solid #86c1bf;
-      text-indent: 35px;
-      width: 100%;
-      padding: .5rem 0;
-      font-size: 1.2rem; }
-      @media (min-width: 768px) {
-        .sing-in-modal .input-group input {
-          font-size: 1.5rem; } }
-  .sing-in-modal .sub-button {
-    padding: 0.5rem 6rem;
-    background: rgba(5, 65, 68, 0.25);
-    color: #054144;
-    letter-spacing: 1px;
-    font-weight: 900;
-    font-size: 1.2rem;
-    border: 1px solid #054144;
-    text-align: center;
-    cursor: pointer;
-    transition: .5s ease; }
-    @media (min-width: 576px) {
-      .sing-in-modal .sub-button {
-        padding: 1.2rem 8rem;
-        font-size: 1.2rem;
-        margin-bottom: 1rem; } }
-    @media (min-width: 768px) {
-      .sing-in-modal .sub-button {
-        font-size: 1.2rem; } }
-    .sing-in-modal .sub-button:hover {
-      background-color: #054144;
-      color: white; }
