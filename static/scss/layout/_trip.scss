@@ -1,5 +1,9 @@
 .section-life {
     padding: 0;
+    margin-top:17rem;
+    @include response(sm) {margin-top: 20rem;}
+    @include response(md) {margin-top: 22rem;}
+    @include response(lg) {margin-top: 16rem;}
     .the-way-h1 {
         font-family: $lato;
         font-size: 1.8rem;

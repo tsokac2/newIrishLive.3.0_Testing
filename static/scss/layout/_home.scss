@@ -1,15 +1,20 @@
 .section-home {
     padding: 0;
+    margin-top:17rem;
+    @include response(sm) {margin-top: 20rem;}
+    @include response(md) {margin-top: 22rem;}
+    @include response(lg) {margin-top: 16rem;}
     .quote{
         font-family: 'Merienda', cursive;
         color: rgb(29, 35, 51);
         padding: 0.3rem 0;
+        margin-bottom: 2rem;
         h2 {
             font-size: 1.3rem;
             font-weight: 700;
             margin: 0;
             @include response(sm) {font-size: 2rem; margin-bottom: .5rem;}
-            @include response(xl) {font-size: 2rem;}
+            @include response(xl) {font-size: 2.5rem;}
         }
         p {  
             font-size: 1.2rem;
@@ -21,7 +26,7 @@
                 letter-spacing: .5px;
                 font-size: 1.5rem;
             }
-            @include response(xl) {font-size: 1.5;}
+            @include response(xl) {font-size: 1.8rem;}
         }
         .gandalf {
             margin: 1.5rem 0;
@@ -167,7 +172,6 @@
             }
         }
     }
-
     .cards-wrap {
         margin-top: 2rem;
         display: grid;

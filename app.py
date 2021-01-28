@@ -9,7 +9,6 @@ if os.path.exists("env.py"):
     import env
 
 
-
 app = Flask(__name__)
 
 
@@ -49,7 +48,7 @@ def tips():
 def registration():
     form = RegisterForm()
     if form.validate_on_submit():
-        flash(f'Welcome to New Irish Life family {form.username.data}, <a href="\work">LOG IN</a> to your profile!', 'reg-success')
+        flash(f'Welcome to New Irish Life family {form.username.data}, <a href="\login">LOG IN</a> to your profile!', 'reg-success')
         return redirect(url_for("registration"))
     return render_template('registration.html', title="Registration", form=form)
 
@@ -59,10 +58,10 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         if form.email.data == 'admin@blog.com' and form.password.data == 'password':
-            flash('You have been logged in!', 'success')
-            
+            flash('Welcom username', 'success')
+            return redirect(url_for('home'))
         else:
-            flash('Login Unsuccessful. Please check username and password', 'danger')
+            flash('Login Unsuccessful. Please check username and password', 'reg-danger')
             return redirect(url_for('login'))
     return render_template('login.html', title="Login", form=form)
 

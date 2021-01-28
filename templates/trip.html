@@ -1,13 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-
 <div class="container-fluid">
     <div class="row justify-content-center p-4">
         <div class="col">
             <section class="section-life">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-10">
-                        <div class="row justify-content-center head-border">
+                        <div class="row justify-content-center">
                             <div class="col-12 col-md-6">
                                 <h1>TRIP</h1>
                                 <div class="intro-life">
@@ -64,13 +63,11 @@
                     </div>
                     <div class="col-12 col-lg-10 cards-wrap p-0">
                         <div id="Card1" class="wrap">
-                            <a class="card-link-fav jet_fav" href="https://www.jetcost.ie/"
-                                target="_blank"><strong>Jetcost.ie</strong></a>
+                            <a class="card-link-fav jet_fav" href="https://www.jetcost.ie/" target="_blank"><strong>Jetcost.ie</strong></a>
                             <div class="card-img">
                                 <img src="{{ url_for('static', filename='images/jet.png')}}" class="img-fluid" alt="Jetcost">
                             </div>
-                            <button id="showLinks1" class="load-links-btn">Quick Links...<i
-                                    class="fas fa-sort-down"></i></button>
+                            <button id="showLinks1" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
                             <p class="card-text">
                                 Jetcost is a European leading travel metasearch,
                                 where people can find – always for free - the most relevant travel solution for their
@@ -81,21 +78,17 @@
                                     <a href="https://www.jetcost.ie/" target="_blank" class="q-links a">FLIGHTS</a>
                                     <a href="https://www.jetcost.ie/hotels" target="_blank" class="q-links a">HOTELS</a>
                                     <a href="https://www.jetcost.ie/car-rental" target="_blank" class="q-links">CARS</a>
-                                    <a href="https://www.jetcost.ie/flights/airlines" target="_blank"
-                                        class="q-links">AIRLINES</a>
+                                    <a href="https://www.jetcost.ie/flights/airlines" target="_blank" class="q-links">AIRLINES</a>
                                 </div>
-                                <button id="hideLinks1" class="hideLinks-btn"><i
-                                        class="far fa-times-circle"></i></button>
+                                <button id="hideLinks1" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
                             </div>
                         </div>
                         <div id="Card2" class="wrap">
-                            <a class="card-link-fav kiwi_fav" href="https://www.kiwi.com/us/"
-                                target="_blank"><strong>Kiwi.ie</strong></a>
+                            <a class="card-link-fav kiwi_fav" href="https://www.kiwi.com/us/" target="_blank"><strong>Kiwi.ie</strong></a>
                             <div class="card-img">
                                 <img src="{{ url_for('static', filename='images/kiwi.png')}}" class="img-fluid" alt="Kiwi">
                             </div>
-                            <button id="showLinks2" class="load-links-btn">Quick Links...<i
-                                    class="fas fa-sort-down"></i></button>
+                            <button id="showLinks2" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
                             <p class="card-text">
                                 Making travel better
                                 ...basically helps you figure out where you can fly within your budget.Branch offices in
@@ -104,26 +97,20 @@
                             </p>
                             <div class="showLinks2-grid hideLinks2-grid text-center">
                                 <div class="q-links-wrap">
-                                    <a href="https://www.kiwi.com/us/landing/" class="q-links a"
-                                        target="_blank">TRAVEL</a>
-                                    <a href="https://cars.kiwi.com/?preflang=us&adplat=headerlinks" class="q-links a"
-                                        target="_blank">CARS</a>
+                                    <a href="https://www.kiwi.com/us/landing/" class="q-links a" target="_blank">TRAVEL</a>
+                                    <a href="https://cars.kiwi.com/?preflang=us&adplat=headerlinks" class="q-links a" target="_blank">CARS</a>
                                     <a href="https://rooms.kiwi.com/" class="q-links a" target="_blank">ROOMS</a>
-                                    <a href="https://www.kiwi.com/stories?utm_source=kiwicom&utm_medium=navbar"
-                                        class="q-links" target="_blank">STORIES</a>
+                                    <a href="https://www.kiwi.com/stories?utm_source=kiwicom&utm_medium=navbar" class="q-links" target="_blank">STORIES</a>
                                 </div>
-                                <button id="hideLinks2" class="hideLinks-btn"><i
-                                        class="far fa-times-circle"></i></button>
+                                <button id="hideLinks2" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
                             </div>
                         </div>
                         <div id="Card3" class="wrap">
-                            <a class="card-link-fav sky_fav" href="https://www.skyscanner.ie/"
-                                target="_blank"><strong>Skyscanner.ie</strong></a>
+                            <a class="card-link-fav sky_fav" href="https://www.skyscanner.ie/" target="_blank"><strong>Skyscanner.ie</strong></a>
                             <div class="card-img">
                                 <img src="{{ url_for('static', filename='images/sky.png')}}" class="img-fluid" alt="Sky Scanner">
                             </div>
-                            <button id="showLinks3" class="load-links-btn">Quick Links...<i
-                                    class="fas fa-sort-down"></i></button>
+                            <button id="showLinks3" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
                             <p class="card-text">
                                 When we started in 2003, we set out to do things differently.
                                 We wanted to show all flight options in one place.
@@ -131,25 +118,19 @@
                             <div class="showLinks3-grid hideLinks3-grid text-center">
                                 <div class="q-links-wrap">
                                     <a href="https://www.skyscanner.ie/" class="q-links a" target="_blank">FLIGHTS</a>
-                                    <a href="https://www.skyscanner.ie/hotels?na=1&sd=2020-12-06&ed=2020-12-13"
-                                        class="q-links a" target="_blank">HOTELS</a>
-                                    <a href="https://www.skyscanner.ie/carhire" target="_blank" class="q-links a">CAR
-                                        HIRE</a>
-                                    <a href="https://www.skyscanner.ie/about-us" target="_blank" class="q-links a">ABOUT
-                                        US</a>
+                                    <a href="https://www.skyscanner.ie/hotels?na=1&sd=2020-12-06&ed=2020-12-13" class="q-links a" target="_blank">HOTELS</a>
+                                    <a href="https://www.skyscanner.ie/carhire" target="_blank" class="q-links a">CAR HIRE</a>
+                                    <a href="https://www.skyscanner.ie/about-us" target="_blank" class="q-links a">ABOUT US</a>
                                 </div>
-                                <button id="hideLinks3" class="hideLinks-btn"><i
-                                        class="far fa-times-circle"></i></button>
+                                <button id="hideLinks3" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
                             </div>
                         </div>
                         <div id="Card4" class="wrap">
-                            <a class="card-link-fav edreams_fav" href="https://www.edreams.com/"
-                                target="_blank"><strong>eDreams.com</strong></a>
+                            <a class="card-link-fav edreams_fav" href="https://www.edreams.com/" target="_blank"><strong>eDreams.com</strong></a>
                             <div class="card-img">
                                 <img src="{{ url_for('static', filename='images/edreams.png')}}" class="img-fluid" alt="eDreams">
                             </div>
-                            <button id="showLinks4" class="load-links-btn">Quick Links...<i
-                                    class="fas fa-sort-down"></i></button>
+                            <button id="showLinks4" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
                             <p class="card-text">
                                 eDreams is one of the world’s leading online travel brands. A true disruptor in the
                                 online travel booking sector since its
@@ -157,17 +138,12 @@
                             </p>
                             <div class="showLinks4-grid hideLinks4-grid text-center">
                                 <div class="q-links-wrap">
-                                    <a href="https://www.edreams.com/flights/" class="q-links a"
-                                        target="_blank">FLIGHTS</a>
-                                    <a href="https://www.edreams.com/flight-hotel/" class="q-links a"
-                                        target="_blank">FLIGHTS + HOTELS</a>
-                                    <a href="https://www.edreams.com/flight-hotel/" class="q-links a"
-                                        target="_blank">CAR RENTAL</a>
-                                    <a href="https://transfers.edreams.com/en-us/?currency=EUR&ref=edreams&campaign=edr-en-ie-tab-pc"
-                                        class="q-links a" target="_blank">SHUTTLES</a>
+                                    <a href="https://www.edreams.com/flights/" class="q-links a" target="_blank">FLIGHTS</a>
+                                    <a href="https://www.edreams.com/flight-hotel/" class="q-links a" target="_blank">FLIGHTS + HOTELS</a>
+                                    <a href="https://www.edreams.com/flight-hotel/" class="q-links a" target="_blank">CAR RENTAL</a>
+                                    <a href="https://transfers.edreams.com/en-us/?currency=EUR&ref=edreams&campaign=edr-en-ie-tab-pc" class="q-links a" target="_blank">SHUTTLES</a>
                                 </div>
-                                <button id="hideLinks4" class="hideLinks-btn"><i
-                                        class="far fa-times-circle"></i></button>
+                                <button id="hideLinks4" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
                             </div>
                         </div>
                     </div>
@@ -217,13 +193,11 @@
                     </div>
                     <div class="col-12 col-lg-10 cards-wrap p-0">
                         <div id="Card5" class="wrap">
-                            <a class="card-link-fav dublinbus_fav" href="https://www.dublinbus.ie/"
-                                target="_blank"><strong>Dublin Bus</strong></a>
+                            <a class="card-link-fav dublinbus_fav" href="https://www.dublinbus.ie/" target="_blank"><strong>Dublin Bus</strong></a>
                             <div class="card-img">
                                 <img src="{{ url_for('static', filename='images/dublinbus.png')}}" class="img-fluid" alt="Dublin Bus">
                             </div>
-                            <button id="showLinks5" class="load-links-btn">Quick Links...<i
-                                    class="fas fa-sort-down"></i></button>
+                            <button id="showLinks5" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
                             <p class="card-text">
                                 We operate the Public Service
                                 Obligation network in the Greater Dublin Area under a contract of services with the
@@ -231,76 +205,60 @@
                             </p>
                             <div class="showLinks5-grid hideLinks5-grid text-center">
                                 <div class="q-links-wrap">
-                                    <a href="https://www.dublinbus.ie/" target="_blank" class="q-links a">"LIVE"
-                                        INFO</a>
+                                    <a href="https://www.dublinbus.ie/" target="_blank" class="q-links a">"LIVE" INFO</a>
                                     <a href="https://www.dublinbus.ie/" target="_blank" class="q-links a">TIMETABLES</a>
                                     <a href="https://www.dublinbus.ie/" target="_blank" class="q-links">PLANER</a>
                                     <a href="https://www.dublinbus.ie/" target="_blank" class="q-links">PRICING</a>
                                 </div>
-                                <button id="hideLinks5" class="hideLinks-btn"><i
-                                        class="far fa-times-circle"></i></button>
+                                <button id="hideLinks5" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
                             </div>
                         </div>
                         <div id="Card6" class="wrap">
-                            <a class="card-link-fav dart_fav" href="https://www.irishrail.ie/"
-                                target="_blank"><strong>Irishrail.ie</strong></a>
+                            <a class="card-link-fav dart_fav" href="https://www.irishrail.ie/" target="_blank"><strong>Irishrail.ie</strong></a>
                             <div class="card-img">
                                 <img src="{{ url_for('static', filename='images/dart.png')}}" class="img-fluid" alt="Dart">
                             </div>
-                            <button id="showLinks6" class="load-links-btn">Quick Links...<i
-                                    class="fas fa-sort-down"></i></button>
+                            <button id="showLinks6" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
                             <p class="card-text">
                                 Intercity rail operate between Dublin, Sligo, Galway, Limerick, Cork and etc.
                                 Operates the Dublin to Belfast Enterprise service with Northern Ireland Railways.
                             </p>
                             <div class="showLinks6-grid hideLinks6-grid text-center">
                                 <div class="q-links-wrap">
-                                    <a href="https://www.irishrail.ie/train-timetables/live-departure-train-times"
-                                        class="q-links a" target="_blank">"LIVE" INFO </a>
-                                    <a href="https://www.irishrail.ie/rail-fares-and-tickets/fares-info"
-                                        class="q-links a" target="_blank">TICKETS</a>
-                                    <a href="https://www.irishrail.ie/train-timetables" class="q-links a"
-                                        target="_blank">TIMETABLES</a>
-                                    <a href="https://www.irishrail.ie/travel-information/your-travel" class="q-links a"
-                                        target="_blank">TRAVEL INFO</a>
+                                    <a href="https://www.irishrail.ie/train-timetables/live-departure-train-times" class="q-links a" target="_blank">"LIVE" INFO </a>
+                                    <a href="https://www.irishrail.ie/rail-fares-and-tickets/fares-info" class="q-links a" target="_blank">TICKETS</a>
+                                    <a href="https://www.irishrail.ie/train-timetables" class="q-links a" target="_blank">TIMETABLES</a>
+                                    <a href="https://www.irishrail.ie/travel-information/your-travel" class="q-links a" target="_blank">TRAVEL INFO</a>
                                 </div>
-                                <button id="hideLinks6" class="hideLinks-btn"><i
-                                        class="far fa-times-circle"></i></button>
+                                <button id="hideLinks6" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
                             </div>
                         </div>
                         <div id="Card7" class="wrap">
-                            <a class="card-link-fav luas_fav" href="https://www.luas.ie/"
-                                target="_blank"><strong>Luas.ie</strong></a>
+                            <a class="card-link-fav luas_fav" href="https://www.luas.ie/" target="_blank"><strong>Luas.ie</strong></a>
                             <div class="card-img">
                                 <img src="{{ url_for('static', filename='images/luas.png')}}" class="img-fluid" alt="Luas">
                             </div>
-                            <button id="showLinks7" class="load-links-btn">Quick Links...<i
-                                    class="fas fa-sort-down"></i></button>
+                            <button id="showLinks7" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
                             <p class="card-text">
                                 Luas is a tram/light rail system in Dublin, Ireland.
                                 There are three main lines: the Green Line, Cross city and the Red Line.
                             </p>
                             <div class="showLinks7-grid hideLinks7-grid text-center">
                                 <div class="q-links-wrap">
-                                    <a href="https://luas.ie/travel-updates/" class="q-links a" target="_blank">TRAVEL
-                                        UPDATE</a>
+                                    <a href="https://luas.ie/travel-updates/" class="q-links a" target="_blank">TRAVEL UPDATE</a>
                                     <a href="https://luas.ie/times/" class="q-links a" target="_blank">TIMES</a>
                                     <a href="https://luas.ie/map/" class="q-links a" target="_blank">STOPS</a>
-                                    <a href="https://luas.ie/ticket-types.html" class="q-links a"
-                                        target="_blank">TICKETS</a>
+                                    <a href="https://luas.ie/ticket-types.html" class="q-links a" target="_blank">TICKETS</a>
                                 </div>
-                                <button id="hideLinks7" class="hideLinks-btn"><i
-                                        class="far fa-times-circle"></i></button>
+                                <button id="hideLinks7" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
                             </div>
                         </div>
                         <div id="Card8" class="wrap">
-                            <a class="card-link-fav aircoach_fav" href="https://www.aircoach.ie/"
-                                target="_blank"><strong>Aircoach.ie</strong></a>
+                            <a class="card-link-fav aircoach_fav" href="https://www.aircoach.ie/" target="_blank"><strong>Aircoach.ie</strong></a>
                             <div class="card-img">
                                 <img src="{{ url_for('static', filename='images/aircoach.png')}}" class="img-fluid" alt="Aircoach">
                             </div>
-                            <button id="showLinks8" class="load-links-btn">Quick Links...<i
-                                    class="fas fa-sort-down"></i></button>
+                            <button id="showLinks8" class="load-links-btn">Quick Links...<i class="fas fa-sort-down"></i></button>
                             <p class="card-text">
                                 Aircoach is Ireland's leading private bus and coach operator and provides a
                                 range of high frequency scheduled coach services to and from Dublin City Centre and
@@ -308,17 +266,12 @@
                             </p>
                             <div class="showLinks8-grid hideLinks8-grid text-center">
                                 <div class="q-links-wrap">
-                                    <a href="https://www.aircoach.ie/" class="q-links a" target="_blank">BOOK
-                                        TICKETS</a>
-                                    <a href="https://www.aircoach.ie/plan-journey/timetables" class="q-links a"
-                                        target="_blank">ROUTES</a>
-                                    <a href="https://www.aircoach.ie/plan-journey/fares" class="q-links a"
-                                        target="_blank">FARES</a>
-                                    <a href="https://www.aircoach.ie/plan-journey/travel-information" class="q-links a"
-                                        target="_blank">INFO</a>
+                                    <a href="https://www.aircoach.ie/" class="q-links a" target="_blank">BOOK TICKETS</a>
+                                    <a href="https://www.aircoach.ie/plan-journey/timetables" class="q-links a" target="_blank">ROUTES</a>
+                                    <a href="https://www.aircoach.ie/plan-journey/fares" class="q-links a" target="_blank">FARES</a>
+                                    <a href="https://www.aircoach.ie/plan-journey/travel-information" class="q-links a" target="_blank">INFO</a>
                                 </div>
-                                <button id="hideLinks8" class="hideLinks-btn"><i
-                                        class="far fa-times-circle"></i></button>
+                                <button id="hideLinks8" class="hideLinks-btn"><i class="far fa-times-circle"></i></button>
                             </div>
                         </div>
                     </div>
